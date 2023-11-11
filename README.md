@@ -6,6 +6,7 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 
 - Homebrew
 - OpenSSL
+- CocoaPods
 - Mac OS X 10.13+
 - Xcode 13+
 
