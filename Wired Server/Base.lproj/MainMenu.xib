@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22154" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22154"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
@@ -26,7 +26,7 @@
                             <menuItem title="Check for Updates…" id="Jmg-qD-Zmw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
-                                    <action selector="checkForUpdate:" target="494" id="ScE-Gf-gAY"/>
+                                    <action selector="checkForUpdates:" target="fgJ-Hu-hWn" id="UtM-MF-Vo6"/>
                                 </connections>
                             </menuItem>
                             <menuItem isSeparatorItem="YES" id="236">
@@ -648,5 +648,6 @@
         </menu>
         <customObject id="494" customClass="WSAppDelegate"/>
         <customObject id="420" customClass="NSFontManager"/>
+        <customObject id="fgJ-Hu-hWn" customClass="SPUStandardUpdaterController"/>
     </objects>
 </document>
