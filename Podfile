@@ -3,7 +3,8 @@ use_frameworks!
 platform :osx, '10.13'
 
 target 'Wired Server' do
-    pod 'OpenSSL-Universal', '~> 1.1.180'
+    #pod 'OpenSSL-Universal', '~> 1.1.180'
+    pod 'Sparkle', '~> 2.5.2'
 end
 
 target 'WiredNetworking' do
