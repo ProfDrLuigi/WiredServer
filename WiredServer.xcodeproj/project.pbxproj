@@ -1616,8 +1616,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
+				SDKROOT = macosx14.2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1664,8 +1663,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
+				SDKROOT = macosx14.2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
