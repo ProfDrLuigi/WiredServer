@@ -34,7 +34,5 @@
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
 	<string>https://wired.read-write.fr/sparkle/wiredserver_cast.xml</string>
-	<key>SUPublicEDKey</key>
-	<string>dsa_pub.pem</string>
 </dict>
 </plist>
