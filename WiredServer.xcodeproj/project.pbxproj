@@ -33,6 +33,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A01F9EF2B8918D000E1D111 /* Sparkle */; };
 		4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C016F9A1778F6E200D6D2B3 /* Localizable.strings */; };
 		4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C233C911521022800245506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C8F1521022800245506 /* InfoPlist.strings */; };
@@ -55,8 +56,8 @@
 		4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
 		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
-		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
 		4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C789019170B3E3C004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
@@ -89,7 +90,6 @@
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
 		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
 		4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5D55124475A48000333FB /* dsa_pub.pem */; };
-		602A0F243ECF53359D71C890 /* Pods_Wired_Server.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3C9194C88F5352B653D289 /* Pods_Wired_Server.framework */; };
 		B133499321B1BA55004AF77F /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = B133499021B1BA55004AF77F /* libwired */; };
 		B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499821B1BD8D004AF77F /* WebKit.framework */; };
 		B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499C21B1BD9E004AF77F /* Quartz.framework */; };
@@ -236,8 +236,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03D388D31231BE810AC6395D /* Pods-Wired Server.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.debug.xcconfig"; path = "Target Support Files/Pods-Wired Server/Pods-Wired Server.debug.xcconfig"; sourceTree = "<group>"; };
-		1485DC132D2408FB5A3AB9A4 /* Pods-Wired Server.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wired Server.release.xcconfig"; path = "Target Support Files/Pods-Wired Server/Pods-Wired Server.release.xcconfig"; sourceTree = "<group>"; };
 		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -450,10 +448,8 @@
 		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
 		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
 		4CE5D55124475A48000333FB /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = SOURCE_ROOT; };
-		4CE5D55524475B07000333FB /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Pods/Sparkle/Sparkle.framework; sourceTree = "<group>"; };
 		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
 		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
-		AE3C9194C88F5352B653D289 /* Pods_Wired_Server.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wired_Server.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
 		B133499421B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B133499521B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
@@ -479,6 +475,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */,
 				4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */,
 				4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */,
 				4C789007170B35DE004CE617 /* wired.a in Frameworks */,
@@ -486,7 +483,6 @@
 				B133499F21B1BE6B004AF77F /* libsqlite3.dylib in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
 				B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */,
-				602A0F243ECF53359D71C890 /* Pods_Wired_Server.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +539,6 @@
 				4C8D3375151E2D93001A6BF7 /* Subprojects */,
 				4C8D3357151E2D8D001A6BF7 /* Frameworks */,
 				4C8D3355151E2D8D001A6BF7 /* Products */,
-				AF14F66C6AA0466292F6CD1E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -560,13 +555,11 @@
 			isa = PBXGroup;
 			children = (
 				4C52C85D245A009200BFB5AE /* ServiceManagement.framework */,
-				4CE5D55524475B07000333FB /* Sparkle.framework */,
 				B133499E21B1BE6B004AF77F /* libsqlite3.dylib */,
 				B133499C21B1BD9E004AF77F /* Quartz.framework */,
 				B133499821B1BD8D004AF77F /* WebKit.framework */,
 				4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */,
 				4C8D335A151E2D8D001A6BF7 /* Other Frameworks */,
-				AE3C9194C88F5352B653D289 /* Pods_Wired_Server.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -940,15 +933,6 @@
 			path = wired/wired;
 			sourceTree = "<group>";
 		};
-		AF14F66C6AA0466292F6CD1E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				03D388D31231BE810AC6395D /* Pods-Wired Server.debug.xcconfig */,
-				1485DC132D2408FB5A3AB9A4 /* Pods-Wired Server.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -977,13 +961,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8D3372151E2D8D001A6BF7 /* Build configuration list for PBXNativeTarget "Wired Server" */;
 			buildPhases = (
-				6D889BDF4CBAD84DB677815A /* [CP] Check Pods Manifest.lock */,
 				4C8D3350151E2D8D001A6BF7 /* Sources */,
 				4C8D3351151E2D8D001A6BF7 /* Frameworks */,
 				4C52C884245A209900BFB5AE /* Copy Helper */,
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
-				4E71213DF4224D8DBE2C418F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -995,6 +977,9 @@
 				4C233CBB15211F9C00245506 /* PBXTargetDependency */,
 			);
 			name = "Wired Server";
+			packageProductDependencies = (
+				2A01F9EF2B8918D000E1D111 /* Sparkle */,
+			);
 			productName = "Wired Server";
 			productReference = 4C8D3354151E2D8D001A6BF7 /* Wired Server.app */;
 			productType = "com.apple.product-type.application";
@@ -1155,45 +1140,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
 			shellScript = "sh \"$SRCROOT/../wired_server_distribute.sh\" || exit 1\n";
-		};
-		4E71213DF4224D8DBE2C418F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wired Server/Pods-Wired Server-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6D889BDF4CBAD84DB677815A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Wired Server-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1361,7 +1307,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1370,11 +1316,13 @@
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1392,7 +1340,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1401,11 +1349,13 @@
 				GCC_PREFIX_HEADER = "Wired Server Helper/Wired Server Helper-Prefix.pch";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Wired Server Helper/Wired Server Helper-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1423,24 +1373,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/include-macos\"",
-					"\"$(SRCROOT)/Pods/Headers/Public/libxml2\"",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lsqlite3",
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
 		};
@@ -1452,24 +1391,13 @@
 				CODE_SIGN_IDENTITY = "-";
 				DEAD_CODE_STRIPPING = YES;
 				GCC_VERSION = "";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/include-macos\"",
-					"\"$(SRCROOT)/Pods/Headers/Public/libxml2\"",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lsqlite3",
 					"-lz",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
@@ -1576,7 +1504,6 @@
 		};
 		4C8D3373151E2D8D001A6BF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03D388D31231BE810AC6395D /* Pods-Wired Server.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1584,7 +1511,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1612,18 +1539,17 @@
 					/usr/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx14.2;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		4C8D3374151E2D8D001A6BF7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1485DC132D2408FB5A3AB9A4 /* Pods-Wired Server.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -1631,7 +1557,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 19;
+				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1659,11 +1585,11 @@
 					/usr/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.5;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SDKROOT = macosx14.2;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1754,6 +1680,14 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2A01F9EF2B8918D000E1D111 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2A1F2D332AFFB4EE00CB958F /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C8D334B151E2D8C001A6BF7 /* Project object */;
 }

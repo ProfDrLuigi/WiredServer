@@ -53,10 +53,6 @@
 
 #pragma mark -
 
-- (IBAction)checkForUpdate:(id)sender {
-    [self.settingsController checkForUpdate:sender];
-}
-
 - (IBAction)exportSettings:(id)sender {
     [self.settingsController exportSettings:sender];
 }

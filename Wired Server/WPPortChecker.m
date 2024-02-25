@@ -68,19 +68,31 @@
 #pragma mark -
 
 - (void)checkStatusForPort:(NSUInteger)port {
-    NSURLRequest        *request;
-    NSURLConnection        *connection;
-    
-    _HTTPStatusCode        = 0;
-    _port                = port;
-    
+    _HTTPStatusCode = 0;
+    _port = port;
     [_data setLength:0];
     
     NSURL *url = [NSURL URLWithString:[NSSWF:@"https://wired.read-write.fr/port_check.php?port=%lu", (unsigned long)port]];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    request         = [NSURLRequest requestWithURL:url];
-    connection      = [NSURLConnection connectionWithRequest:request delegate:self];
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURLSessionDataTask *task = [session dataTaskWithRequest:request
+                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        // Handle response or error here
+        if (error) {
+            NSLog(@"Error: %@", error);
+            // Handle error
+        } else {
+            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+            NSInteger statusCode = [httpResponse statusCode];
+            NSLog(@"HTTP Status Code: %ld", (long)statusCode);
+            // Handle status code
+        }
+    }];
+    
+    [task resume];
 }
+
 
 
 

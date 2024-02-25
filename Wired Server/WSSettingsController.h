@@ -67,14 +67,12 @@ enum WPPruneEventsType {
 	IBOutlet NSTextField					*_snapshotTextField;
 	IBOutlet NSButton						*_exportSettingsButton;
 	IBOutlet NSButton						*_importSettingsButton;
-	IBOutlet NSButton						*_automaticallyCheckForUpdate;
 	IBOutlet NSPanel						*_passwordPanel;
 	IBOutlet NSTextField					*_passwordMismatchTextField;
     IBOutlet NSWindow                       *_activityWindow;
     IBOutlet NSProgressIndicator			*_activityProgressIndicator;
     IBOutlet NSTextField					*_activityTextField;
 
-	SUUpdater					*_updater;
 	
 	WPAccountManager			*_accountManager;
 	WPConfigManager				*_configManager;
@@ -152,7 +150,6 @@ enum WPPruneEventsType {
 @property (assign) IBOutlet NSButton					*exportSettingsButton;
 @property (assign) IBOutlet NSButton					*importSettingsButton;
 
-@property (assign) IBOutlet NSButton					*automaticallyCheckForUpdate;
 
 @property (assign) IBOutlet NSPanel                     *passwordPanel;
 @property (assign) IBOutlet NSSecureTextField			*newyPasswordTextField;
@@ -160,7 +157,6 @@ enum WPPruneEventsType {
 @property (assign) IBOutlet NSTextField                 *passwordMismatchTextField;
 
 /** Attributes */
-@property (readwrite, retain) SUUpdater					*updater;
 
 @property (readwrite, retain) WPAccountManager			*accountManager;
 @property (readwrite, retain) WPConfigManager			*configManager;
@@ -189,9 +185,6 @@ enum WPPruneEventsType {
 - (IBAction)install:(id)sender;
 - (IBAction)uninstall:(id)sender;
 - (IBAction)releaseNotes:(id)sender;
-
-- (IBAction)checkForUpdate:(id)sender;
-- (IBAction)automaticallyCheckForUpdate:(id)sender;
 
 - (IBAction)start:(id)sender;
 - (IBAction)stop:(id)sender;

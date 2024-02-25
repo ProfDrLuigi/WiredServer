@@ -1,6 +1,6 @@
 # Makefile.in
 
-abs_top_srcdir		= /Users/nark/Development/Me/Cocoa/Wired/wired2.5/WiredServer/wired
+abs_top_srcdir		= /Users/luigi/Documents/Xcode/WiredServer/wired
 datarootdir			= ${prefix}/share
 exec_prefix			= ${prefix}
 fake_prefix			= /Library
@@ -13,7 +13,7 @@ wireddir			= Wired
 
 WD_VERSION			= 2.5
 WD_MAINTAINER		= 0
-WD_USER				= nark
+WD_USER				= luigi
 WD_GROUP			= staff
 
 DISTFILES			= INSTALL LICENSE NEWS README Makefile Makefile.in \
@@ -29,12 +29,12 @@ TRANSFERTESTOBJS	= $(addprefix $(objdir)/transfertest/,$(notdir $(patsubst %.c,%
 DEFS				= -DHAVE_CONFIG_H -DENABLE_STRNATPMPERR -DMINIUPNPC_SET_SOCKET_TIMEOUT
 CC					= gcc
 CFLAGS				= -g -O2
-CPPFLAGS			= -I/Users/nark/Development/Me/Cocoa/Wired/wired2.5/WiredServer/Pods/OpenSSL-Universal/include-macos -I/usr/local/include -DWI_PTHREADS -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_SQLITE3 -DWI_RSA -DWI_LIBXML2 -DWI_PLIST -DWI_ZLIB -DWI_P7
-LDFLAGS				= -L$(rundir)/libwired/lib -L/Users/nark/Development/Me/Cocoa/Wired/wired2.5/WiredServer/Pods/OpenSSL-Universal/lib-macos -L/usr/local/lib
+CPPFLAGS			= -I/Users/luigi/Documents/Xcode/WiredServer/Pods/OpenSSL-Universal/include-macos -I/usr/local/include -DWI_PTHREADS -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_SQLITE3 -DWI_RSA -DWI_LIBXML2 -DWI_PLIST -DWI_ZLIB -DWI_P7
+LDFLAGS				= -L$(rundir)/libwired/lib -L/Users/luigi/Documents/Xcode/WiredServer/Pods/OpenSSL-Universal/lib-macos -L/usr/local/lib
 LIBS				= -lwired -framework CoreServices -framework Carbon -lsqlite3 -lcrypto -lxml2 -lz
 INCLUDES			= -I$(abs_top_srcdir) -I$(rundir)/libwired/include -I$(abs_top_srcdir)/thirdparty
 
-INSTALL				= /usr/local/bin/ginstall -c
+INSTALL				= /usr/bin/install -c
 COMPILE				= $(CC) $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
 PREPROCESS			= $(CC) -E $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
 DEPEND				= $(CC) -MM $(INCLUDES)

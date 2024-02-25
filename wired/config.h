@@ -89,7 +89,7 @@
 #define WD_ROOT "/Library/Wired"
 
 /* User name */
-#define WD_USER "nark"
+#define WD_USER "luigi"
 
 /* Application version */
 #define WD_VERSION "2.5"

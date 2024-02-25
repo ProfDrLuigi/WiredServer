@@ -112,10 +112,8 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 @synthesize newyPasswordTextField       = _newPasswordTextField;
 @synthesize verifyPasswordTextField     = _verifyPasswordTextField;
 @synthesize passwordMismatchTextField   = _passwordMismatchTextField;
-@synthesize automaticallyCheckForUpdate = _automaticallyCheckForUpdate;
 
 @synthesize revealButton                = _revealButton;
-@synthesize updater                     = _updater;
 
 @synthesize accountManager              = _accountManager;
 @synthesize configManager               = _configManager;
@@ -159,8 +157,6 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
     [_logManager release];
     [_wiredManager release];
     [_portChecker release];
-    
-    [_updater release];
     
     [_greenDropImage release];
     [_redDropImage release];
@@ -215,12 +211,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 	[self _updateRunningStatus];
 	[self _updateSettings];
 	[self _updatePortStatus];
-    
-    // Sparkle setup
-    if([[WPSettings settings] boolForKey:@"SUEnableAutomaticChecks"]) {
-        [_updater resetUpdateCycle];
-        [_updater checkForUpdatesInBackground];
-    }
+
 	
 	[_logManager startReadingFromLog];
 }
@@ -240,12 +231,6 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 
 	_portChecker	= [[WPPortChecker alloc] init];
 	[_portChecker setDelegate:self];
-	_updater = [[SUUpdater updaterForBundle:[self bundle]] retain];
-	[_updater setDelegate:(id)self];
-    [_updater setAutomaticallyChecksForUpdates:[[WPSettings settings] boolForKey:@"SUEnableAutomaticChecks"]];
-    [_updater setAutomaticallyDownloadsUpdates:[[WPSettings settings] boolForKey:@"SUAllowsAutomaticUpdates"]];
-	[_updater setSendsSystemProfile:YES];
-    [_updater setFeedURL:[NSURL URLWithString:@"https://wired.read-write.fr/sparkle/wiredserver_cast.xml"]];
     
 	_greenDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GreenDrop" ofType:@"tiff"]];
 	
@@ -379,7 +364,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 	[NSAnimationContext beginGrouping];
 	[[NSAnimationContext currentContext] setDuration:0.1];
 	
-	if ([[NSApp currentEvent] modifierFlags] & NSShiftKeyMask)
+    if ([[NSApp currentEvent] modifierFlags] & NSEventModifierFlagShift)
 	    [[NSAnimationContext currentContext] setDuration:1.0];
 	
 	[[[self.window contentView] animator] replaceSubview:previousView with:view];
@@ -428,18 +413,6 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
      setReleaseNotesWithHTML:[NSData dataWithContentsOfFile:path]];
 	[[WIReleaseNotesController releaseNotesController] showWindow:self];
 }
-
-
-#pragma mark -
-
-- (IBAction)checkForUpdate:(id)sender {
-	[_updater checkForUpdates:sender];
-}
-
-- (IBAction)automaticallyCheckForUpdate:(id)sender {
-    //[_updater resetUpdateCycle];
-}
-
 
 
 #pragma mark -
@@ -850,22 +823,6 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 
 
 
-
-
-
-#pragma mark -
-
-- (void)updaterWillRelaunchApplication:(SUUpdater *)updater {
-    NSURL *url = [[NSBundle mainBundle] URLForResource:@"Wired Server Helper" withExtension:@"app"];
-    
-    if([[WISettings settings] boolForKey:WPEnableMenuItem]) {
-        [WIStatusMenuManager stopHelper:url];
-    }
-    
-    [[WPSettings settings] setBool:YES forKey:WPUpdated];
-    [[WPSettings settings] synchronize];
-}
-
 @end
 
 
@@ -1114,19 +1071,19 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 			case WPPortCheckerOpen:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_greenDropImage];
-				[_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %u is open", @"Port status"), _portCheckerPort]];
+                [_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %lu is open", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerClosed:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
-				[_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %u is closed", @"Port status"), _portCheckerPort]];
+                [_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %lu is closed", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFiltered:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
-				[_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %u is filtered", @"Port status"), _portCheckerPort]];
+                [_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %lu is filtered", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFailed:

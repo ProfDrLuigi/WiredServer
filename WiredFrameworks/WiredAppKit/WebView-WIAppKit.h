@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Read-Write.fr. All rights reserved.
 //
 
-#import "WITemplateBundle.h"
-#import "WIChatLogController.h"
+#import <WiredAppKit/WITemplateBundle.h>
+#import <WiredAppKit/WIChatLogController.h>
 
 
 
