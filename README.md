@@ -4,18 +4,10 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 
 ## Prerequisites
 
-- Homebrew
-- OpenSSL
 - Mac OS X 10.13+
 - Xcode 13+
 
 ## How to compile Wired Server
-
-1. Install Homebrew : [https://brew.sh](https://brew.sh)
-
-2. Install OpenSSL with homebrew:
-
-		brew install openssl
 
 1. Get sources on GitHub:
 
