@@ -6,7 +6,6 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 
 - Homebrew
 - OpenSSL
-- CocoaPods
 - Mac OS X 10.13+
 - Xcode 13+
 
@@ -16,25 +15,17 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 
 2. Install OpenSSL with homebrew:
 
-		brew install openssl cocoapods
+		brew install openssl
 
 1. Get sources on GitHub:
 
 		git clone https://github.com/profdrluigi/WiredServer.git
 		
-2. Move into the sources directory:
-		
-		cd WiredServer
-		
-3. Install requirements using CocoaPods:
+2. Open `WiredServer.xcworkspace` with Xcode
 
-		pod install
-		
-4. Open `WiredServer.xcworkspace` with Xcode
+3. Select scheme `Wired Server` and be sure to use "Debug" Build Configuration
 
-5. Select scheme `Wired Server` and be sure to use "Debug" Build Configuration
-
-6. Launch Build, Wired Server.app should launch automatically when finished
+4. Launch Build, Wired Server.app should launch automatically when finished
 
 
 ## Troubleshooting
