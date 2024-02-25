@@ -174,7 +174,7 @@
 #define HAVE_STRUCT_SOCKADDR_SA_LEN 1
 
 /* Define to 1 if `st_birthtime' is a member of `struct stat64'. */
-#define HAVE_STRUCT_STAT64_ST_BIRTHTIME 1
+/* #undef HAVE_STRUCT_STAT64_ST_BIRTHTIME */
 
 /* Define to 1 if `st_birthtime' is a member of `struct stat'. */
 #define HAVE_STRUCT_STAT_ST_BIRTHTIME 1

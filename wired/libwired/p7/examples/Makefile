@@ -6,8 +6,8 @@ rundir			= ../../../run/libwired
 DEFS			= -DHAVE_CONFIG_H
 CC				= gcc
 CFLAGS			= -g -O2
-CPPFLAGS		= -I/Users/luigi/Documents/Xcode/WiredServer/Pods/OpenSSL-Universal/include-macos -I/usr/local/include -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_PTHREADS -DWI_LIBXML2 -DWI_PLIST -DWI_SQLITE3 -DWI_RSA -DWI_ZLIB -DWI_P7
-LDFLAGS			= -L$(rundir)/lib -L/Users/luigi/Documents/Xcode/WiredServer/Pods/OpenSSL-Universal/lib-macos -L/usr/local/lib
+CPPFLAGS		= -I/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-diuxyepkbhfpstdsraxdsmljpked/SourcePackages/checkouts/OpenSSL/macosx/include -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_PTHREADS -DWI_LIBXML2 -DWI_PLIST -DWI_SQLITE3 -DWI_RSA -DWI_ZLIB -DWI_P7
+LDFLAGS			= -L$(rundir)/lib -L/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-diuxyepkbhfpstdsraxdsmljpked/SourcePackages/checkouts/OpenSSL/macosx/lib
 LIBS			= -lwired -framework CoreServices -framework Carbon -lxml2 -lsqlite3 -lcrypto -lz
 INCLUDES		= -I$(abs_top_srcdir) -I$(rundir)/include
 
