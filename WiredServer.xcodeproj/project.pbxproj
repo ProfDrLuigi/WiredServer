@@ -238,6 +238,9 @@
 
 /* Begin PBXFileReference section */
 		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
+		2AE3B2432B8BE25C001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2AE3B2442B8BE25C001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/Settings.xib; sourceTree = "<group>"; };
+		2AE3B2452B8BE25C001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -1010,6 +1013,7 @@
 				en,
 				fr,
 				Base,
+				de,
 			);
 			mainGroup = 4C8D3349151E2D8C001A6BF7;
 			packageReferences = (
@@ -1234,6 +1238,7 @@
 			children = (
 				4C016F991778F6E200D6D2B3 /* en */,
 				4C016F9B1778F6E700D6D2B3 /* fr */,
+				2AE3B2452B8BE25C001F95D7 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1285,6 +1290,7 @@
 			children = (
 				4C016F7D1778E97C00D6D2B3 /* fr */,
 				B133499421B1BA8F004AF77F /* Base */,
+				2AE3B2432B8BE25C001F95D7 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1294,6 +1300,7 @@
 			children = (
 				4C4FDE69177900CA00FADB95 /* fr */,
 				B133499521B1BA8F004AF77F /* Base */,
+				2AE3B2442B8BE25C001F95D7 /* de */,
 			);
 			name = Settings.xib;
 			sourceTree = "<group>";
