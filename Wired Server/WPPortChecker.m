@@ -72,7 +72,7 @@
     _port = port;
     [_data setLength:0];
     
-    NSURL *url = [NSURL URLWithString:[NSSWF:@"https://wired.read-write.fr/port_check.php?port=%lu", (unsigned long)port]];
+    NSURL *url = [NSURL URLWithString:[NSSWF:@"https://wired.istation.pw/wiredserver/port_check.php?port=%lu", (unsigned long)port]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     NSURLSession *session = [NSURLSession sharedSession];

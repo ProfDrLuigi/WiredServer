@@ -90,7 +90,7 @@ enum WPPruneEventsType {
 	NSImage						*_redDropImage;
 	NSImage						*_grayDropImage;
 	
-	WIDateFormatter				*_dateFormatter;
+    NSDateFormatter				*_dateFormatter;
 	NSMutableArray				*_logLines;
 	NSMutableArray				*_logRows;
 	NSDictionary				*_logAttributes;
@@ -174,7 +174,7 @@ enum WPPruneEventsType {
 @property (readwrite, retain) NSImage					*redDropImage;
 @property (readwrite, retain) NSImage					*grayDropImage;
 
-@property (readwrite, retain) WIDateFormatter           *dateFormatter;
+@property (readwrite, retain) NSDateFormatter           *dateFormatter;
 @property (readwrite, retain) NSMutableArray            *logLines;
 @property (readwrite, retain) NSMutableArray            *logRows;
 @property (readwrite, retain) NSDictionary              *logAttributes;
