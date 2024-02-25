@@ -34,6 +34,7 @@
 
 /* Begin PBXBuildFile section */
 		2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A01F9EF2B8918D000E1D111 /* Sparkle */; };
+		2AE3B1F22B8B923F001F95D7 /* wiredserver.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B1F12B8B923F001F95D7 /* wiredserver.html */; };
 		4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C016F9A1778F6E200D6D2B3 /* Localizable.strings */; };
 		4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C233C911521022800245506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C8F1521022800245506 /* InfoPlist.strings */; };
@@ -236,6 +237,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
 		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
@@ -532,6 +534,7 @@
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
+				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
 				B133499021B1BA55004AF77F /* libwired */,
 				4C8D335E151E2D8D001A6BF7 /* Wired Server */,
 				4C233C8C1521022800245506 /* Wired Server Helper */,
@@ -1102,6 +1105,7 @@
 				4C4A2959151F880C0084E041 /* Console.icns in Resources */,
 				4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */,
 				4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */,
+				2AE3B1F22B8B923F001F95D7 /* wiredserver.html in Resources */,
 				4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */,
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,

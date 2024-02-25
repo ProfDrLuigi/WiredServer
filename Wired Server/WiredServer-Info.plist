@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.5</string>
+	<string>2.6</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -32,7 +32,11 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>SUAllowsAutomaticUpdates</key>
+	<true/>
 	<key>SUFeedURL</key>
-	<string>https://wired.read-write.fr/sparkle/wiredserver_cast.xml</string>
+	<string>https://wired.istation.pw/wiredserver/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>IocWX96bR2E4UoPBgFT3KVRVWbut/1HjJVrfChE6l+s=</string>
 </dict>
 </plist>
