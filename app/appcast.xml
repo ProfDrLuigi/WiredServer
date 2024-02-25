@@ -4,12 +4,12 @@
         <title>Wired Server</title>
         <item>
             <title>2.7</title>
-            <pubDate>Sun, 25 Feb 2024 16:18:21 +0100</pubDate>
-            <sparkle:version>1</sparkle:version>
+            <pubDate>Sun, 25 Feb 2024 21:16:06 +0100</pubDate>
+            <sparkle:version>2</sparkle:version>
             <sparkle:shortVersionString>2.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://wired.istation.pw/wiredserver/wiredserver.html</sparkle:releaseNotesLink>
-            <enclosure url="https://wired.istation.pw/wiredserver/wiredserver.zip" length="6140043" type="application/octet-stream" sparkle:edSignature="txt1ikB7d7Z+2BxjKGw6IajqeqQmhtQHyjxMVgsIgxIouOb3SSWf+krCaiRQQBDdWYleEAXLzX+OEDH/pnOeAg=="/>
+            <enclosure url="https://wired.istation.pw/wiredserver/wiredserver.zip" length="8066358" type="application/octet-stream" sparkle:edSignature="K3SIB7bgbjrjdE2zydLLl6wnHqwhjTD81+aG4i8QKtQQ3wAH4OG/BA28+Jnl9jFHJ7jiia8OSkHj24fX+ZVuCQ=="/>
         </item>
     </channel>
 </rss>

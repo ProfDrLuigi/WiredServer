@@ -1000,9 +1000,6 @@
 					4C233C881521022800245506 = {
 						ProvisioningStyle = Manual;
 					};
-					4C8D3353151E2D8D001A6BF7 = {
-						ProvisioningStyle = Manual;
-					};
 				};
 			};
 			buildConfigurationList = 4C8D334E151E2D8C001A6BF7 /* Build configuration list for PBXProject "WiredServer" */;
@@ -1131,7 +1128,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n\ncp -r \"$BUILT_PRODUCTS_DIR/Wired Server Helper.app\" \"$BUILT_PRODUCTS_DIR/Wired Server.app/Contents/Resources/\"\n\ncp -r \"$BUILT_PRODUCTS_DIR/Wired Server.app\" ~/Desktop\n\n#rm \"$BUILT_PRODUCTS_DIR/Wired\"/wired\n";
+			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n\n#cp -r \"$BUILT_PRODUCTS_DIR/Wired Server Helper.app\" \"$BUILT_PRODUCTS_DIR/Wired Server.app/Contents/Resources/\"\n\n#cp -r \"$BUILT_PRODUCTS_DIR/Wired Server.app\" ~/Desktop\n\n#rm \"$BUILT_PRODUCTS_DIR/Wired\"/wired\n";
 		};
 		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1308,11 +1305,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = "Wired Server Helper/Wired Server Helper.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1328,7 +1324,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 2.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -1341,11 +1337,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = "Wired Server Helper/Wired Server Helper.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1361,7 +1356,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 2.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -1430,6 +1425,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1484,6 +1481,8 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1511,14 +1510,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 7KTXA5Y36K;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1545,7 +1542,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 2.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
@@ -1558,14 +1555,12 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
-				CODE_SIGN_ENTITLEMENTS = "Wired Server/Wired Server.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = 7KTXA5Y36K;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1592,7 +1587,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MARKETING_VERSION = 2.7;
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
