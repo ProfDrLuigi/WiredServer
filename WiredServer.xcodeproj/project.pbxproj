@@ -34,7 +34,6 @@
 
 /* Begin PBXBuildFile section */
 		2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A01F9EF2B8918D000E1D111 /* Sparkle */; };
-		2AE3B1F22B8B923F001F95D7 /* wiredserver.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B1F12B8B923F001F95D7 /* wiredserver.html */; };
 		2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */; };
 		2AFF8CEF2B8C9A0600ABBAE8 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */; };
 		2AFF8CF12B8C9A5800ABBAE8 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */; };
@@ -83,7 +82,6 @@
 		4C8D348B151F58D7001A6BF7 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C8D34B7151F81C3001A6BF7 /* WSSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */; };
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
-		4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5D55124475A48000333FB /* dsa_pub.pem */; };
 		B133499321B1BA55004AF77F /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = B133499021B1BA55004AF77F /* libwired */; };
 		B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499821B1BD8D004AF77F /* WebKit.framework */; };
 		B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499C21B1BD9E004AF77F /* Quartz.framework */; };
@@ -1066,9 +1064,7 @@
 				4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */,
 				4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */,
 				4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */,
-				4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */,
 				4C8D3420151E9B1B001A6BF7 /* Wired in Resources */,
-				2AE3B1F22B8B923F001F95D7 /* wiredserver.html in Resources */,
 				2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */,
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,
@@ -1268,6 +1264,8 @@
 		4C233C9F1521022900245506 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
@@ -1300,6 +1298,8 @@
 		4C233CA01521022900245506 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";

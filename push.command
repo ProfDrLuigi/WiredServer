@@ -5,15 +5,16 @@
 #	exit 1
 #fi
 
+cd ~/Documents/Xcode/WiredServer
+
 rm -r /Users/luigi/Library/Caches/Sparkle_generate_appcast/*
+rm app/appcast.xml
+cp wiredserver.html app/
 
-    rm ~/Documents/Xcode/WiredServer/app/appcast.xml
-    cp ~/Documents/Xcode/WiredServer/wiredserver.html ~/Documents/Xcode/WiredServer/app/
-    #ditto -c -k --sequesterRsrc --keepParent ~/Documents/Xcode/WiredServer/"Wired Server.app" ~/Documents/Xcode/WiredServer/app/wiredserver.zip
+ditto -c -k --sequesterRsrc --keepParent /Applications/"Wired Server.app" app/wiredserver.zip
 
-    /Applications/Sparkle/bin/generate_appcast ~/Documents/Xcode/WiredServer/app/
-    #sed -ib "s/Luigi\/wiredServer/Luigi\/WiredServer/g" ~/Documents/Xcode/WiredServer/app/appcast.xml
-    #rm ~/Documents/Xcode/WiredServer/app/appcast.xmlb
+/Applications/Sparkle/bin/generate_appcast app/
 
-#rm -r ~/Documents/Xcode/WiredServer/"Wired Server.app"
+
+
 
