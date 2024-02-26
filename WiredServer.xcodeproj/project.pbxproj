@@ -1091,7 +1091,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n\n#cp -r \"$BUILT_PRODUCTS_DIR/Wired Server Helper.app\" \"$BUILT_PRODUCTS_DIR/Wired Server.app/Contents/Resources/\"\n\n#cp -r \"$BUILT_PRODUCTS_DIR/Wired Server.app\" ~/Desktop\n\n#rm \"$BUILT_PRODUCTS_DIR/Wired\"/wired\n";
+			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n";
 		};
 		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;

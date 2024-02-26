@@ -34,19 +34,19 @@
 @implementation WPPortChecker
 
 - (id)init {
-	self = [super init];
-	
-	_data = [[NSMutableData alloc] init];
-	
-	return self;
+    self = [super init];
+    
+    _data = [[NSMutableData alloc] init];
+    
+    return self;
 }
 
 
 
 - (void)dealloc {
-	[_data release];
-	
-	[super dealloc];
+    [_data release];
+    
+    [super dealloc];
 }
 
 
@@ -54,13 +54,13 @@
 #pragma mark -
 
 - (void)setDelegate:(id)newDelegate {
-	delegate = newDelegate;
+    delegate = newDelegate;
 }
 
 
 
 - (id)delegate {
-	return delegate;
+    return delegate;
 }
 
 
@@ -68,31 +68,19 @@
 #pragma mark -
 
 - (void)checkStatusForPort:(NSUInteger)port {
-    _HTTPStatusCode = 0;
-    _port = port;
+    NSURLRequest        *request;
+    NSURLConnection        *connection;
+    
+    _HTTPStatusCode        = 0;
+    _port                = port;
+    
     [_data setLength:0];
     
     NSURL *url = [NSURL URLWithString:[NSSWF:@"https://wired.istation.pw/wiredserver/port_check.php?port=%lu", (unsigned long)port]];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
-    NSURLSession *session = [NSURLSession sharedSession];
-    NSURLSessionDataTask *task = [session dataTaskWithRequest:request
-                                            completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        // Handle response or error here
-        if (error) {
-            NSLog(@"Error: %@", error);
-            // Handle error
-        } else {
-            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-            NSInteger statusCode = [httpResponse statusCode];
-            NSLog(@"HTTP Status Code: %ld", (long)statusCode);
-            // Handle status code
-        }
-    }];
-    
-    [task resume];
+    request         = [NSURLRequest requestWithURL:url];
+    connection      = [NSURLConnection connectionWithRequest:request delegate:self];
 }
-
 
 
 

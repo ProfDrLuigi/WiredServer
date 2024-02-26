@@ -725,7 +725,7 @@ Gw
         </window>
     </objects>
     <resources>
-        <image name="Folder" width="496" height="417"/>
+        <image name="Folder" width="823" height="830"/>
         <image name="GreenDrop" width="16" height="16"/>
         <image name="Log" width="823" height="830"/>
         <image name="NSAdvanced" width="32" height="32"/>
