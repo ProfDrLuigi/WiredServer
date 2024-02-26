@@ -232,10 +232,10 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 	_portChecker	= [[WPPortChecker alloc] init];
 	[_portChecker setDelegate:self];
     
-	_greenDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GreenDrop" ofType:@"tiff"]];
+    _greenDropImage	= [NSImage imageNamed:NSImageNameStatusAvailable];
 	
-    _redDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"RedDrop" ofType:@"tiff"]];
-	_grayDropImage	= [[NSImage alloc] initWithContentsOfFile:[[self bundle] pathForResource:@"GrayDrop" ofType:@"tiff"]];
+    _redDropImage	= [NSImage imageNamed:NSImageNameStatusUnavailable];
+    _grayDropImage = [NSImage imageNamed:NSImageNameStatusNone];
     
     [_filesPopUpButton selectItemAtIndex:1];
     [self loadInfo];
@@ -931,15 +931,17 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 		
 		switch([_accountManager hasUserAccountWithName:@"admin" password:&password]) {
 			case WPAccountFailed:
-				[_accountStatusImageView setImage:_grayDropImage];
+                [_accountStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
 				[_accountStatusTextField setStringValue:NSLocalizedString(@"Could not read accounts file", @"Account status")];
+                
+                [NSImage imageNamed:NSImageNameStatusNone];
                 
 				[_setPasswordForAdminButton setEnabled:NO];
 				[_createNewAdminUserButton setEnabled:NO];
 				break;
                 
 			case WPAccountOldStyle:
-				[_accountStatusImageView setImage:_grayDropImage];
+				[_accountStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
 				[_accountStatusTextField setStringValue:NSLocalizedString(@"Accounts file is in a previous format, start to upgrade it", @"Account status")];
                 
 				[_setPasswordForAdminButton setEnabled:NO];
@@ -947,7 +949,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 				break;
                 
 			case WPAccountNotFound:
-				[_accountStatusImageView setImage:_grayDropImage];
+				[_accountStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
 				[_accountStatusTextField setStringValue:NSLocalizedString(@"No account with name \u201cadmin\u201d found", @"Account status")];
                 
                 [_setPasswordButton setEnabled:NO];
@@ -957,10 +959,10 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
                 
 			case WPAccountOK:                
 				if([password length] == 0 || [password isEqualToString:[@"" SHA1]]) {
-					[_accountStatusImageView setImage:_redDropImage];
+					[_accountStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusUnavailable]];
 					[_accountStatusTextField setStringValue:NSLocalizedString(@"Account with name \u201cadmin\u201d has no password set", @"Account status")];
 				} else {
-					[_accountStatusImageView setImage:_greenDropImage];
+					[_accountStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusAvailable]];
 					[_accountStatusTextField setStringValue:NSLocalizedString(@"Account with name \u201cadmin\u201d has a password set", @"Account status")];
 				}
                 
@@ -1012,7 +1014,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
         
 	} else {
         
-		[_accountStatusImageView setImage:_grayDropImage];
+		[_accountStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
 		[_accountStatusTextField setStringValue:NSLocalizedString(@"Wired is not installed", @"Account status")];
         
 		[_startButton setEnabled:NO];
@@ -1050,42 +1052,42 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 - (void)_updatePortStatus
 {    
 	if(![_wiredManager isInstalled]) {
-		[_portStatusImageView setImage:_grayDropImage];
+		[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
 		[_portStatusTextField setStringValue:NSLocalizedString(@"Wired Server not found", @"Port status")];
 	}
 	else if(![_wiredManager isRunning]) {
-		[_portStatusImageView setImage:_grayDropImage];
+		[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
 		[_portStatusTextField setStringValue:NSLocalizedString(@"Wired Server is not running", @"Port status")];
 	}
 	else {
 		switch(_portCheckerStatus) {
 			case WPPortCheckerUnknown:
                 [_portCheckProgressIndicator startAnimation:self];
-				[_portStatusImageView setImage:_grayDropImage];
+				[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusNone]];
                 [_portStatusTextField setStringValue:NSLocalizedString(@"Checking port status\u2026", @"Port status")];
 				break;
                 
 			case WPPortCheckerOpen:
                 [_portCheckProgressIndicator stopAnimation:self];
-				[_portStatusImageView setImage:_greenDropImage];
+				[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusAvailable]];
                 [_portStatusTextField setStringValue:[NSSWF:NSLocalizedString(@"Port %lu is open", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerClosed:
                 [_portCheckProgressIndicator stopAnimation:self];
-				[_portStatusImageView setImage:_redDropImage];
+				[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusUnavailable]];
                 [_portStatusTextField setStringValue:[NSSWF:NSLocalizedString(@"Port %lu is closed", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFiltered:
                 [_portCheckProgressIndicator stopAnimation:self];
-				[_portStatusImageView setImage:_redDropImage];
+				[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusUnavailable]];
                 [_portStatusTextField setStringValue:[NSSWF:NSLocalizedString(@"Port %lu is filtered", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFailed:
                 [_portCheckProgressIndicator stopAnimation:self];
-				[_portStatusImageView setImage:_redDropImage];
+				[_portStatusImageView setImage:[NSImage imageNamed:NSImageNameStatusUnavailable]];
 				[_portStatusTextField setStringValue:NSLocalizedString(@"Port check failed", @"Port status")];
 				break;
 		}

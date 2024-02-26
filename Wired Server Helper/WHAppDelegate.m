@@ -191,6 +191,7 @@
         [self.statusItem setImage:[NSImage imageNamed:@"WiredServerMenu"]];
 	} else {
         [self.statusItem setImage:[NSImage imageNamed:@"WiredServerMenuOff"]];
+
     }
 }
 

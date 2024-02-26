@@ -35,6 +35,9 @@
 /* Begin PBXBuildFile section */
 		2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A01F9EF2B8918D000E1D111 /* Sparkle */; };
 		2AE3B1F22B8B923F001F95D7 /* wiredserver.html in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B1F12B8B923F001F95D7 /* wiredserver.html */; };
+		2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */; };
+		2AFF8CEF2B8C9A0600ABBAE8 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */; };
+		2AFF8CF12B8C9A5800ABBAE8 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */; };
 		4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C016F9A1778F6E200D6D2B3 /* Localizable.strings */; };
 		4C233C8B1521022800245506 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C233C911521022800245506 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C8F1521022800245506 /* InfoPlist.strings */; };
@@ -42,18 +45,11 @@
 		4C233C971521022800245506 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C951521022800245506 /* Credits.rtf */; };
 		4C233C9A1521022800245506 /* WHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233C991521022800245506 /* WHAppDelegate.m */; };
 		4C233C9D1521022900245506 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C233C9B1521022900245506 /* MainMenu.xib */; };
-		4C233CA2152103FE00245506 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CA1152103FE00245506 /* WiredServerMenu.png */; };
 		4C233CA51521063A00245506 /* WHStatusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C233CA41521063A00245506 /* WHStatusController.m */; };
 		4C233CB0152112C700245506 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C233CB1152112D700245506 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
 		4C233CB2152112E500245506 /* WPError.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3478151F58D7001A6BF7 /* WPError.m */; };
-		4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CBD152124B600245506 /* WiredServerMenuOff.png */; };
-		4C233CC21521329E00245506 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CFC15228BB800245506 /* wiredserverrnote.html */; };
-		4C4A2959151F880C0084E041 /* Console.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2958151F880C0084E041 /* Console.icns */; };
-		4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2966151F894F0084E041 /* GrayDrop.tiff */; };
-		4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2967151F894F0084E041 /* GreenDrop.tiff */; };
-		4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A2968151F894F0084E041 /* RedDrop.tiff */; };
 		4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
 		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
@@ -64,15 +60,14 @@
 		4C789019170B3E3C004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */; };
 		4C8D3365151E2D8D001A6BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3364151E2D8D001A6BF7 /* main.m */; };
 		4C8D3369151E2D8D001A6BF7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3367151E2D8D001A6BF7 /* Credits.rtf */; };
 		4C8D336C151E2D8D001A6BF7 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */; };
 		4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */; };
-		4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */; };
 		4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3417151E9B0B001A6BF7 /* install.sh */; };
 		4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3419151E9B0B001A6BF7 /* uninstall.sh */; };
 		4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D341A151E9B0B001A6BF7 /* update.sh */; };
@@ -87,9 +82,7 @@
 		4C8D348A151F58D7001A6BF7 /* WPSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3480151F58D7001A6BF7 /* WPSettings.m */; };
 		4C8D348B151F58D7001A6BF7 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C8D34B7151F81C3001A6BF7 /* WSSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */; };
-		4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D34DF151F84E3001A6BF7 /* Updates.tiff */; };
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
-		4CD34ED91571ACED0054E305 /* Files.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD34ED81571ACED0054E305 /* Files.png */; };
 		4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 4CE5D55124475A48000333FB /* dsa_pub.pem */; };
 		B133499321B1BA55004AF77F /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = B133499021B1BA55004AF77F /* libwired */; };
 		B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499821B1BD8D004AF77F /* WebKit.framework */; };
@@ -245,6 +238,9 @@
 		2AE3B3522B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
 		2AE3B3532B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		2AE3B3542B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenu.png; sourceTree = "<group>"; };
+		2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenuOff.png; sourceTree = "<group>"; };
 		4C016F991778F6E200D6D2B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C233C891521022800245506 /* Wired Server Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C233C8E1521022800245506 /* Wired Server Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wired Server Helper-Info.plist"; sourceTree = "<group>"; };
@@ -254,15 +250,9 @@
 		4C233C961521022800245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		4C233C981521022800245506 /* WHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHAppDelegate.h; sourceTree = "<group>"; };
 		4C233C991521022800245506 /* WHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHAppDelegate.m; sourceTree = "<group>"; };
-		4C233CA1152103FE00245506 /* WiredServerMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenu.png; sourceTree = "<group>"; };
 		4C233CA31521063A00245506 /* WHStatusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHStatusController.h; sourceTree = "<group>"; };
 		4C233CA41521063A00245506 /* WHStatusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHStatusController.m; sourceTree = "<group>"; };
-		4C233CBD152124B600245506 /* WiredServerMenuOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WiredServerMenuOff.png; sourceTree = "<group>"; };
 		4C233CFC15228BB800245506 /* wiredserverrnote.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserverrnote.html; sourceTree = "<group>"; };
-		4C4A2958151F880C0084E041 /* Console.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Console.icns; sourceTree = "<group>"; };
-		4C4A2966151F894F0084E041 /* GrayDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrayDrop.tiff; sourceTree = "<group>"; };
-		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
-		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
 		4C52C85D245A009200BFB5AE /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../wired/man; sourceTree = "<group>"; };
 		4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WiredFrameworks.xcodeproj; path = WiredFrameworks/WiredFrameworks.xcodeproj; sourceTree = "<group>"; };
@@ -279,7 +269,6 @@
 		4C8D3368151E2D8D001A6BF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		4C8D336A151E2D8D001A6BF7 /* WSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSAppDelegate.h; sourceTree = "<group>"; };
 		4C8D336B151E2D8D001A6BF7 /* WSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSAppDelegate.m; sourceTree = "<group>"; };
-		4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = WiredServer.icns; sourceTree = "<group>"; };
 		4C8D3417151E9B0B001A6BF7 /* install.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = install.sh; sourceTree = "<group>"; };
 		4C8D3419151E9B0B001A6BF7 /* uninstall.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = uninstall.sh; sourceTree = "<group>"; };
 		4C8D341A151E9B0B001A6BF7 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
@@ -304,7 +293,6 @@
 		4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPWiredManager.m; sourceTree = "<group>"; wrapsLines = 1; };
 		4C8D34B5151F81C2001A6BF7 /* WSSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSSettingsController.h; sourceTree = "<group>"; };
 		4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSSettingsController.m; sourceTree = "<group>"; };
-		4C8D34DF151F84E3001A6BF7 /* Updates.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = Updates.tiff; sourceTree = "<group>"; };
 		4C9623312448A823001F1C86 /* wi-regexp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-regexp.h"; sourceTree = "<group>"; };
 		4C9623322448A823001F1C86 /* wi-random.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-random.h"; sourceTree = "<group>"; };
 		4C9623332448A823001F1C86 /* wi-test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "wi-test.h"; sourceTree = "<group>"; };
@@ -450,7 +438,6 @@
 		4CA5987F15A2449F000C4DAD /* users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = users.h; path = ../../wired/wired/users.h; sourceTree = "<group>"; };
 		4CA5988015A2449F000C4DAD /* wired.conf.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = wired.conf.in; path = ../../wired/wired/wired.conf.in; sourceTree = "<group>"; };
 		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
-		4CD34ED81571ACED0054E305 /* Files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Files.png; sourceTree = "<group>"; };
 		4CE5D55124475A48000333FB /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = SOURCE_ROOT; };
 		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
 		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
@@ -493,6 +480,8 @@
 		4C233C8C1521022800245506 /* Wired Server Helper */ = {
 			isa = PBXGroup;
 			children = (
+				2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */,
+				2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */,
 				4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */,
 				4C233C981521022800245506 /* WHAppDelegate.h */,
 				4C233C991521022800245506 /* WHAppDelegate.m */,
@@ -507,8 +496,6 @@
 		4C233C8D1521022800245506 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C233CA1152103FE00245506 /* WiredServerMenu.png */,
-				4C233CBD152124B600245506 /* WiredServerMenuOff.png */,
 				4C233C8E1521022800245506 /* Wired Server Helper-Info.plist */,
 				4C233C8F1521022800245506 /* InfoPlist.strings */,
 				4C233C921521022800245506 /* main.m */,
@@ -533,6 +520,7 @@
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
+				2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */,
 				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
 				B133499021B1BA55004AF77F /* libwired */,
 				4C8D335E151E2D8D001A6BF7 /* Wired Server */,
@@ -592,7 +580,6 @@
 			isa = PBXGroup;
 			children = (
 				4C5EDCC6154366740031D44E /* man */,
-				4C8D33F0151E99E6001A6BF7 /* Pictures */,
 				4C8D3421151E9B32001A6BF7 /* Scripts */,
 				4C8D341F151E9B1B001A6BF7 /* Wired */,
 				4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */,
@@ -611,20 +598,6 @@
 				4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */,
 			);
 			name = Subprojects;
-			sourceTree = "<group>";
-		};
-		4C8D33F0151E99E6001A6BF7 /* Pictures */ = {
-			isa = PBXGroup;
-			children = (
-				4CD34ED81571ACED0054E305 /* Files.png */,
-				4C4A2966151F894F0084E041 /* GrayDrop.tiff */,
-				4C4A2967151F894F0084E041 /* GreenDrop.tiff */,
-				4C4A2968151F894F0084E041 /* RedDrop.tiff */,
-				4C4A2958151F880C0084E041 /* Console.icns */,
-				4C8D34DF151F84E3001A6BF7 /* Updates.tiff */,
-				4C8D33DB151E96E4001A6BF7 /* WiredServer.icns */,
-			);
-			name = Pictures;
 			sourceTree = "<group>";
 		};
 		4C8D33F1151E99FB001A6BF7 /* Classes */ = {
@@ -1076,11 +1049,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C233C911521022800245506 /* InfoPlist.strings in Resources */,
+				2AFF8CEF2B8C9A0600ABBAE8 /* WiredServerMenu.png in Resources */,
 				4C233C971521022800245506 /* Credits.rtf in Resources */,
+				2AFF8CF12B8C9A5800ABBAE8 /* WiredServerMenuOff.png in Resources */,
 				4C233C9D1521022900245506 /* MainMenu.xib in Resources */,
-				4C233CA2152103FE00245506 /* WiredServerMenu.png in Resources */,
-				4C233CBF1521251300245506 /* WiredServerMenuOff.png in Resources */,
-				4C233CC21521329E00245506 /* WiredServer.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1091,22 +1063,16 @@
 				4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */,
 				4C8D3369151E2D8D001A6BF7 /* Credits.rtf in Resources */,
 				4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */,
-				4C8D33DC151E96E4001A6BF7 /* WiredServer.icns in Resources */,
 				4C8D341B151E9B0B001A6BF7 /* install.sh in Resources */,
 				4C8D341D151E9B0B001A6BF7 /* uninstall.sh in Resources */,
 				4C8D341E151E9B0B001A6BF7 /* update.sh in Resources */,
 				4CE5D55224475A48000333FB /* dsa_pub.pem in Resources */,
 				4C8D3420151E9B1B001A6BF7 /* Wired in Resources */,
-				4C8D34E0151F84E3001A6BF7 /* Updates.tiff in Resources */,
-				4C4A2959151F880C0084E041 /* Console.icns in Resources */,
-				4C4A2969151F894F0084E041 /* GrayDrop.tiff in Resources */,
-				4C4A296A151F894F0084E041 /* GreenDrop.tiff in Resources */,
 				2AE3B1F22B8B923F001F95D7 /* wiredserver.html in Resources */,
-				4C4A296B151F894F0084E041 /* RedDrop.tiff in Resources */,
+				2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */,
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,
 				B133499321B1BA55004AF77F /* libwired in Resources */,
-				4CD34ED91571ACED0054E305 /* Files.png in Resources */,
 				4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */,
 				4CB57B171779007D006ECB87 /* Settings.xib in Resources */,
 			);
@@ -1306,7 +1272,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1338,7 +1304,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
@@ -1507,11 +1473,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -1552,11 +1519,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
