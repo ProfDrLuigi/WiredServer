@@ -1,0 +1,178 @@
+
+/* Class = "NSWindow"; title = "Wired Server"; ObjectID = "991"; */
+"991.title" = "Wired Server";
+
+/* Class = "NSToolbarItem"; label = "General"; ObjectID = "1002"; */
+"1002.label" = "Allgemein";
+
+/* Class = "NSToolbarItem"; paletteLabel = "General"; ObjectID = "1002"; */
+"1002.paletteLabel" = "Allgemein";
+
+/* Class = "NSToolbarItem"; label = "Network"; ObjectID = "1464"; */
+"1464.label" = "Netzwerk";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Network"; ObjectID = "1464"; */
+"1464.paletteLabel" = "Netzwerk";
+
+/* Class = "NSToolbarItem"; label = "Logs"; ObjectID = "1542"; */
+"1542.label" = "Logs";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Logs"; ObjectID = "1542"; */
+"1542.paletteLabel" = "Logs";
+
+/* Class = "NSButtonCell"; title = "Check for Updates At Launch"; ObjectID = "1564"; */
+"1564.title" = "Prüfe auf Updates beim Start";
+
+/* Class = "NSButtonCell"; title = "Check For Updates"; ObjectID = "1566"; */
+"1566.title" = "Prüfe auf Updates";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1745"; */
+"1745.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Crash Reports"; ObjectID = "1750"; */
+"1750.title" = "Crash Bericht";
+
+/* Class = "NSButtonCell"; title = "Open Log"; ObjectID = "1751"; */
+"1751.title" = "Öffne Log";
+
+/* Class = "NSButtonCell"; title = "Start"; ObjectID = "1752"; */
+"1752.title" = "Start";
+
+/* Class = "NSButtonCell"; title = "Install"; ObjectID = "1755"; */
+"1755.title" = "Installiere";
+
+/* Class = "NSTextFieldCell"; title = "<<do not localize>>"; ObjectID = "1756"; */
+"1756.title" = "<<do not localize>>";
+
+/* Class = "NSToolbarItem"; label = "Advanced"; ObjectID = "1759"; */
+"1759.label" = "Fortgeschritten";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Advanced"; ObjectID = "1759"; */
+"1759.paletteLabel" = "Fortgeschritten";
+
+/* Class = "NSTextFieldCell"; title = "Wired Server 2.7"; ObjectID = "1773"; */
+"1773.title" = "Wired Server 2.7";
+
+/* Class = "NSButtonCell"; title = "Check Port Again"; ObjectID = "1782"; */
+"1782.title" = "Prüfe Port erneut";
+
+/* Class = "NSTextFieldCell"; title = "Server must be restarted after changing port."; ObjectID = "1783"; */
+"1783.title" = "Server muss nach Portänderung neugestartet werden.";
+
+/* Class = "NSTextFieldCell"; title = "<<do not localize>>"; ObjectID = "1785"; */
+"1785.title" = "<<do not localize>>";
+
+/* Class = "NSTextFieldCell"; placeholderString = "4871"; ObjectID = "1786"; */
+"1786.placeholderString" = "4871";
+
+/* Class = "NSTextFieldCell"; title = "Listening Port:"; ObjectID = "1787"; */
+"1787.title" = "Lauschen auf Port:";
+
+/* Class = "NSButtonCell"; title = "Automatically Download New Updates"; ObjectID = "1831"; */
+"1831.title" = "Automatisch neue Updates herunterladen";
+
+/* Class = "NSTextFieldCell"; title = "Files Folder:"; ObjectID = "1836"; */
+"1836.title" = "Datei-Ordner:";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "1838"; */
+"1838.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "<<do not localize>>"; ObjectID = "1839"; */
+"1839.title" = "<<do not localize>>";
+
+/* Class = "NSMenuItem"; title = "Other…"; ObjectID = "1840"; */
+"1840.title" = "Andere…";
+
+/* Class = "NSButtonCell"; title = "Set Password for \"admin\"…"; ObjectID = "1852"; */
+"1852.title" = "Passwort für \"admin\" setzen…";
+
+/* Class = "NSButtonCell"; title = "Create New “admin” User…"; ObjectID = "1853"; */
+"1853.title" = "Erstelle neuen “admin” Benutzer…";
+
+/* Class = "NSTextFieldCell"; title = "<<do not localize>>"; ObjectID = "1854"; */
+"1854.title" = "<<do not localize>>";
+
+/* Class = "NSTextFieldCell"; title = "Admin Account Status:"; ObjectID = "1856"; */
+"1856.title" = "Admin Account Status:";
+
+/* Class = "NSWindow"; title = "<<do not localize>>"; ObjectID = "1870"; */
+"1870.title" = "<<do not localize>>";
+
+/* Class = "NSTextFieldCell"; title = "Password Mismatch"; ObjectID = "1879"; */
+"1879.title" = "Passwörter stimmen nicht überein";
+
+/* Class = "NSButtonCell"; title = "Cancel"; ObjectID = "1880"; */
+"1880.title" = "Abbrechen";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "1881"; */
+"1881.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "Verify:"; ObjectID = "1882"; */
+"1882.title" = "Überprüfen:";
+
+/* Class = "NSTextFieldCell"; title = "New Password:"; ObjectID = "1884"; */
+"1884.title" = "Neues Passwort:";
+
+/* Class = "NSTextFieldCell"; title = "Automatically Prune Events:"; ObjectID = "1924"; */
+"1924.title" = "Ereignisse automatisch löschen:";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "1927"; */
+"1927.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "Never"; ObjectID = "1928"; */
+"1928.title" = "Niemals";
+
+/* Class = "NSMenuItem"; title = "Daily"; ObjectID = "1929"; */
+"1929.title" = "Täglich";
+
+/* Class = "NSMenuItem"; title = "Weekly"; ObjectID = "1930"; */
+"1930.title" = "Wöchentlich";
+
+/* Class = "NSMenuItem"; title = "Monthly"; ObjectID = "1931"; */
+"1931.title" = "Monatlich";
+
+/* Class = "NSMenuItem"; title = "Yearly"; ObjectID = "1932"; */
+"1932.title" = "Jährlich";
+
+/* Class = "NSTextFieldCell"; title = "Activate Database Snapshots:"; ObjectID = "1937"; */
+"1937.title" = "Aktiviere Datenbank Schnappschuss:";
+
+/* Class = "NSTextFieldCell"; title = "Make a Snapshot every:"; ObjectID = "1941"; */
+"1941.title" = "Erstelle Schnappschuss alle:";
+
+/* Class = "NSTextFieldCell"; placeholderString = "86400"; ObjectID = "1943"; */
+"1943.placeholderString" = "86400";
+
+/* Class = "NSTextFieldCell"; title = "sec."; ObjectID = "1946"; */
+"1946.title" = "Sek.";
+
+/* Class = "NSButtonCell"; title = "Reindex"; ObjectID = "1955"; */
+"1955.title" = "Reindiziere";
+
+/* Class = "NSTextFieldCell"; title = "Reindex Files every:"; ObjectID = "1961"; */
+"1961.title" = "Reindiziere Dateien alle:";
+
+/* Class = "NSTextFieldCell"; title = "sec."; ObjectID = "1964"; */
+"1964.title" = "Sek.";
+
+/* Class = "NSTextFieldCell"; placeholderString = "3600"; ObjectID = "1965"; */
+"1965.placeholderString" = "3600";
+
+/* Class = "NSToolbarItem"; label = "Files"; ObjectID = "1969"; */
+"1969.label" = "Dateien";
+
+/* Class = "NSToolbarItem"; paletteLabel = "Files"; ObjectID = "1969"; */
+"1969.paletteLabel" = "Dateien";
+
+/* Class = "NSTextFieldCell"; title = "Port Status:"; ObjectID = "1972"; */
+"1972.title" = "Port Status:";
+
+/* Class = "NSTextFieldCell"; title = "Launch Wired Automatically:"; ObjectID = "1976"; */
+"1976.title" = "Starte Wired automatisch:";
+
+/* Class = "NSTextFieldCell"; title = "Enable Status Menu:"; ObjectID = "1978"; */
+"1978.title" = "Aktiviere Status Menu:";
+
+/* Class = "NSWindow"; title = "Activity Window"; ObjectID = "1983"; */
+"1983.title" = "Akitivitätsfenster";
+

@@ -386,23 +386,21 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 }
 
 
-
 - (IBAction)uninstall:(id)sender {
-    
     NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:WPLS(@"Are you sure you want to uninstall Wired Server?", @"Uninstall dialog title")];
-    [alert setInformativeText:WPLS(@"All your settings, accounts and other server data will be lost. Export your settings first to be able to restore your data.", @"Uninstall dialog description")];
-    [alert addButtonWithTitle:WPLS(@"Cancel", @"Uninstall dialog button title")];
-    [alert addButtonWithTitle:WPLS(@"Uninstall", @"Uninstall dialog button title")];
+    [alert setMessageText:NSLocalizedString(@"Are you sure you want to uninstall Wired Server?", @"Uninstall dialog title")];
+    [alert setInformativeText:NSLocalizedString(@"All your settings, accounts and other server data will be lost.", @"Uninstall dialog description")];
+    [alert addButtonWithTitle:NSLocalizedString(@"Cancel", @"Uninstall dialog button title")];
+    [alert addButtonWithTitle:NSLocalizedString(@"Uninstall", @"Uninstall dialog button title")];
     NSInteger returnCode = [alert runModal];
-        if (returnCode == NSAlertFirstButtonReturn) {
-            return;
-        }else
-            [self performSelector:@selector(_uninstall) afterDelay:0.1];
-        
     
-    
+    if (returnCode == NSAlertFirstButtonReturn) {
+        return;
+    } else {
+        [self performSelector:@selector(_uninstall) afterDelay:0.1];
+    }
 }
+
 
 - (IBAction)releaseNotes:(id)sender {
 	NSString		*path;
@@ -495,8 +493,8 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
     [openPanel setCanChooseFiles:NO];
     [openPanel setCanChooseDirectories:YES];
     [openPanel setCanCreateDirectories:YES];
-    [openPanel setTitle:WPLS(@"Select Files", @"Files dialog title")];
-    [openPanel setPrompt:WPLS(@"Select", @"Files dialog button title")];
+    [openPanel setTitle:NSLocalizedString(@"Select Files", @"Files dialog title")];
+    [openPanel setPrompt:NSLocalizedString(@"Select", @"Files dialog button title")];
     [openPanel beginSheetModalForWindow:[_filesPopUpButton window] completionHandler:^(NSInteger result){
         if (result == NSModalResponseOK) {
             WIError  *error = nil;
@@ -842,71 +840,70 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 	
 	if(version) {
 		[_versionTextField setStringValue:
-         [NSSWF:WPLS(@"%@", @"Installation status (server version)"),
+         [NSSWF:NSLocalizedString(@"%@", @"Installation status (server version)"),
           version]];
         
 	} else {
-		[_versionTextField setStringValue:WPLS(@"Wired is not installed", @"Installation status")];
+		[_versionTextField setStringValue:NSLocalizedString(@"Wired is not installed", @"Installation status")];
 	}
 	
 	if([_wiredManager isInstalled]) {
-		[_installButton setTitle:WPLS(@"Uninstall\u2026", @"Uninstall button title")];
+		[_installButton setTitle:NSLocalizedString(@"Uninstall\u2026", @"Uninstall button title")];
 		[_installButton setAction:@selector(uninstall:)];
 	} else {
-		[_installButton setTitle:WPLS(@"Install", @"Install button title")];
+		[_installButton setTitle:NSLocalizedString(@"Install", @"Install button title")];
 		[_installButton setAction:@selector(install:)];
 	}
 }
 
-
-
 - (void)_updateRunningStatus {
-	NSString		*status;
-	NSDate			*launchDate;
-	
-	launchDate = [_wiredManager launchDate];
-	
-	if(![_wiredManager isInstalled]) {
-		status = WPLS(@"Server not found", @"Server status");
-	}
-	else if(![_wiredManager isRunning]) {
-		status = WPLS(@"Server is not running", @"Server status");
-	}
-	else {
-		if(launchDate) {
-			status = [NSSWF:WPLS(@"Server is running since %@", @"Server status"),
-                      [_dateFormatter stringFromDate:launchDate]];
-		} else {
-			status = WPLS(@"Server is running", @"Server status");
-		}
-	}
-	
-	[_statusTextField setStringValue:status];
-	
-	if(![_wiredManager isInstalled]) {
-		[_statusImageView setImage:_grayDropImage];
-		
-		[_startButton setTitle:WPLS(@"Start", @"Start button")];
-		[_startButton setEnabled:NO];
-	}
-	else if(![_wiredManager isRunning]) {
-		[_statusImageView setImage:_redDropImage];
+    NSString *status;
+    NSDate *launchDate;
+    
+    launchDate = [self.wiredManager launchDate];
+    
+    if (![self.wiredManager isInstalled]) {
+        status = NSLocalizedString(@"Wired Server not found", @"Server status");
+    }
+    else if (![self.wiredManager isRunning]) {
+        status = NSLocalizedString(@"Wired Server is not running", @"Server status");
+    }
+    else {
+        if (launchDate) {
+            status = [NSString stringWithFormat:NSLocalizedString(@"Wired Server is running since %@", @"Server status"),
+                      [self.dateFormatter stringFromDate:launchDate]];
+        } else {
+            status = NSLocalizedString(@"Wired Server is running", @"Server status");
+        }
+    }
+    
+    [self.statusTextField setStringValue:status];
+    
+    if (![self.wiredManager isInstalled]) {
+        [self.statusImageView setImage:self.grayDropImage];
         
-		[_startButton setTitle:WPLS(@"Start", @"Start button")];
-		[_startButton setEnabled:YES];
-		[_startButton setAction:@selector(start:)];
-	}
-	else {
-		[_statusImageView setImage:_greenDropImage];
+        [self.startButton setTitle:NSLocalizedString(@"Start", @"Start button")];
+        [self.startButton setEnabled:NO];
+    }
+    else if (![self.wiredManager isRunning]) {
+        [self.statusImageView setImage:self.redDropImage];
         
-		[_startButton setTitle:WPLS(@"Stop", @"Stop button")];
-		[_startButton setEnabled:YES];
-		[_startButton setAction:@selector(stop:)];
-        [_hostTextField setEnabled:NO];
-	}
-	
-	[_launchAutomaticallyButton setState:[_wiredManager launchesAutomatically]];
+        [self.startButton setTitle:NSLocalizedString(@"Start", @"Start button")];
+        [self.startButton setEnabled:YES];
+        [self.startButton setAction:@selector(start:)];
+    }
+    else {
+        [self.statusImageView setImage:self.greenDropImage];
+        
+        [self.startButton setTitle:NSLocalizedString(@"Stop", @"Stop button")];
+        [self.startButton setEnabled:YES];
+        [self.startButton setAction:@selector(stop:)];
+        [self.hostTextField setEnabled:NO];
+    }
+    
+    [self.launchAutomaticallyButton setState:[self.wiredManager launchesAutomatically]];
 }
+
 
 - (void)_updateSettings {
 	NSImage			*image;
@@ -935,7 +932,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 		switch([_accountManager hasUserAccountWithName:@"admin" password:&password]) {
 			case WPAccountFailed:
 				[_accountStatusImageView setImage:_grayDropImage];
-				[_accountStatusTextField setStringValue:WPLS(@"Could not read accounts file", @"Account status")];
+				[_accountStatusTextField setStringValue:NSLocalizedString(@"Could not read accounts file", @"Account status")];
                 
 				[_setPasswordForAdminButton setEnabled:NO];
 				[_createNewAdminUserButton setEnabled:NO];
@@ -943,7 +940,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
                 
 			case WPAccountOldStyle:
 				[_accountStatusImageView setImage:_grayDropImage];
-				[_accountStatusTextField setStringValue:WPLS(@"Accounts file is in a previous format, start to upgrade it", @"Account status")];
+				[_accountStatusTextField setStringValue:NSLocalizedString(@"Accounts file is in a previous format, start to upgrade it", @"Account status")];
                 
 				[_setPasswordForAdminButton setEnabled:NO];
 				[_createNewAdminUserButton setEnabled:NO];
@@ -951,7 +948,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
                 
 			case WPAccountNotFound:
 				[_accountStatusImageView setImage:_grayDropImage];
-				[_accountStatusTextField setStringValue:WPLS(@"No account with name \u201cadmin\u201d found", @"Account status")];
+				[_accountStatusTextField setStringValue:NSLocalizedString(@"No account with name \u201cadmin\u201d found", @"Account status")];
                 
                 [_setPasswordButton setEnabled:NO];
 				[_setPasswordForAdminButton setEnabled:YES];
@@ -961,10 +958,10 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 			case WPAccountOK:                
 				if([password length] == 0 || [password isEqualToString:[@"" SHA1]]) {
 					[_accountStatusImageView setImage:_redDropImage];
-					[_accountStatusTextField setStringValue:WPLS(@"Account with name \u201cadmin\u201d has no password set", @"Account status")];
+					[_accountStatusTextField setStringValue:NSLocalizedString(@"Account with name \u201cadmin\u201d has no password set", @"Account status")];
 				} else {
 					[_accountStatusImageView setImage:_greenDropImage];
-					[_accountStatusTextField setStringValue:WPLS(@"Account with name \u201cadmin\u201d has a password set", @"Account status")];
+					[_accountStatusTextField setStringValue:NSLocalizedString(@"Account with name \u201cadmin\u201d has a password set", @"Account status")];
 				}
                 
                 [_setPasswordButton setEnabled:YES];
@@ -1016,7 +1013,7 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 	} else {
         
 		[_accountStatusImageView setImage:_grayDropImage];
-		[_accountStatusTextField setStringValue:WPLS(@"Wired is not installed", @"Account status")];
+		[_accountStatusTextField setStringValue:NSLocalizedString(@"Wired is not installed", @"Account status")];
         
 		[_startButton setEnabled:NO];
 		[_launchAutomaticallyButton setEnabled:NO];
@@ -1054,42 +1051,42 @@ NSString * const WPHelperBundleID = @"fr.read-write.Wired-Server-Helper";
 {    
 	if(![_wiredManager isInstalled]) {
 		[_portStatusImageView setImage:_grayDropImage];
-		[_portStatusTextField setStringValue:WPLS(@"Wired Server not found", @"Port status")];
+		[_portStatusTextField setStringValue:NSLocalizedString(@"Wired Server not found", @"Port status")];
 	}
 	else if(![_wiredManager isRunning]) {
 		[_portStatusImageView setImage:_grayDropImage];
-		[_portStatusTextField setStringValue:WPLS(@"Wired Server is not running", @"Port status")];
+		[_portStatusTextField setStringValue:NSLocalizedString(@"Wired Server is not running", @"Port status")];
 	}
 	else {
 		switch(_portCheckerStatus) {
 			case WPPortCheckerUnknown:
                 [_portCheckProgressIndicator startAnimation:self];
 				[_portStatusImageView setImage:_grayDropImage];
-				[_portStatusTextField setStringValue:WPLS(@"Checking port status\u2026", @"Port status")];
+                [_portStatusTextField setStringValue:NSLocalizedString(@"Checking port status\u2026", @"Port status")];
 				break;
                 
 			case WPPortCheckerOpen:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_greenDropImage];
-                [_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %lu is open", @"Port status"), (unsigned long)_portCheckerPort]];
+                [_portStatusTextField setStringValue:[NSSWF:NSLocalizedString(@"Port %lu is open", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerClosed:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
-                [_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %lu is closed", @"Port status"), (unsigned long)_portCheckerPort]];
+                [_portStatusTextField setStringValue:[NSSWF:NSLocalizedString(@"Port %lu is closed", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFiltered:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
-                [_portStatusTextField setStringValue:[NSSWF:WPLS(@"Port %lu is filtered", @"Port status"), (unsigned long)_portCheckerPort]];
+                [_portStatusTextField setStringValue:[NSSWF:NSLocalizedString(@"Port %lu is filtered", @"Port status"), (unsigned long)_portCheckerPort]];
 				break;
 				
 			case WPPortCheckerFailed:
                 [_portCheckProgressIndicator stopAnimation:self];
 				[_portStatusImageView setImage:_redDropImage];
-				[_portStatusTextField setStringValue:WPLS(@"Port check failed", @"Port status")];
+				[_portStatusTextField setStringValue:NSLocalizedString(@"Port check failed", @"Port status")];
 				break;
 		}
 	}

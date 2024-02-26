@@ -6,7 +6,6 @@
     #import <Cocoa/Cocoa.h>
     #import <Quartz/Quartz.h>
     #import <WebKit/WebKit.h>
-    #import <Sparkle/Sparkle.h>
     #import <WiredFoundation/WiredFoundation.h>
     #import <WiredAppKit/WiredAppKit.h>
 #endif

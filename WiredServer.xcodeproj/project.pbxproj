@@ -238,14 +238,14 @@
 
 /* Begin PBXFileReference section */
 		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
-		2AE3B2432B8BE25C001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		2AE3B2442B8BE25C001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/Settings.xib; sourceTree = "<group>"; };
-		2AE3B2452B8BE25C001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4C016F7D1778E97C00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		4C016F7E1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C016F7F1778E97D00D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = fr; path = fr.lproj/Credits.rtf; sourceTree = "<group>"; };
+		2AE3B34A2B8C7921001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2AE3B34B2B8C7922001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
+		2AE3B34C2B8C7922001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2AE3B3512B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		2AE3B3522B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Settings.strings; sourceTree = "<group>"; };
+		2AE3B3532B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		2AE3B3542B8C7956001F95D7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C016F991778F6E200D6D2B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4C016F9B1778F6E700D6D2B3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4C233C891521022800245506 /* Wired Server Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wired Server Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C233C8E1521022800245506 /* Wired Server Helper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Wired Server Helper-Info.plist"; sourceTree = "<group>"; };
 		4C233C901521022800245506 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -263,7 +263,6 @@
 		4C4A2966151F894F0084E041 /* GrayDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GrayDrop.tiff; sourceTree = "<group>"; };
 		4C4A2967151F894F0084E041 /* GreenDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = GreenDrop.tiff; sourceTree = "<group>"; };
 		4C4A2968151F894F0084E041 /* RedDrop.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RedDrop.tiff; sourceTree = "<group>"; };
-		4C4FDE69177900CA00FADB95 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/Settings.xib; sourceTree = "<group>"; };
 		4C52C85D245A009200BFB5AE /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
 		4C5EDCC6154366740031D44E /* man */ = {isa = PBXFileReference; lastKnownFileType = folder; name = man; path = ../wired/man; sourceTree = "<group>"; };
 		4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WiredFrameworks.xcodeproj; path = WiredFrameworks/WiredFrameworks.xcodeproj; sourceTree = "<group>"; };
@@ -456,9 +455,6 @@
 		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
 		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
 		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
-		B133499421B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		B133499521B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
-		B133499621B1BA8F004AF77F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B133499821B1BD8D004AF77F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		B133499C21B1BD9E004AF77F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
 		B133499E21B1BE6B004AF77F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
@@ -1011,7 +1007,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				fr,
 				Base,
 				de,
 			);
@@ -1237,8 +1232,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C016F991778F6E200D6D2B3 /* en */,
-				4C016F9B1778F6E700D6D2B3 /* fr */,
-				2AE3B2452B8BE25C001F95D7 /* de */,
+				2AE3B3542B8C7956001F95D7 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1262,7 +1256,8 @@
 		4C233C9B1521022900245506 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B133499621B1BA8F004AF77F /* Base */,
+				2AE3B34C2B8C7922001F95D7 /* Base */,
+				2AE3B3532B8C7956001F95D7 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1271,7 +1266,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C8D3362151E2D8D001A6BF7 /* en */,
-				4C016F7E1778E97D00D6D2B3 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1280,7 +1274,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				4C8D3368151E2D8D001A6BF7 /* en */,
-				4C016F7F1778E97D00D6D2B3 /* fr */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
@@ -1288,9 +1281,8 @@
 		4C8D336D151E2D8D001A6BF7 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C016F7D1778E97C00D6D2B3 /* fr */,
-				B133499421B1BA8F004AF77F /* Base */,
-				2AE3B2432B8BE25C001F95D7 /* de */,
+				2AE3B34A2B8C7921001F95D7 /* Base */,
+				2AE3B3512B8C7956001F95D7 /* de */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -1298,9 +1290,8 @@
 		4CB57B151779007D006ECB87 /* Settings.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				4C4FDE69177900CA00FADB95 /* fr */,
-				B133499521B1BA8F004AF77F /* Base */,
-				2AE3B2442B8BE25C001F95D7 /* de */,
+				2AE3B34B2B8C7922001F95D7 /* Base */,
+				2AE3B3522B8C7956001F95D7 /* de */,
 			);
 			name = Settings.xib;
 			sourceTree = "<group>";

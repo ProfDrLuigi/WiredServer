@@ -1,95 +1,95 @@
 /* Server status */
-"A previous version of Wired Server is running since %@" = "A previous version of Wired Server is running since %@";
+"A previous version of Wired Server is running since %@" = "Eine vorherige Version des Wired Servers läuft seit %@";
 
 /* Account status */
-"Account with name “admin” has a password set" = "Account with name “admin” has a password set";
+"Account with name “admin” has a password set" = "Account mit dem Namen “admin” hat ein Passwort";
 
 /* Account status */
-"Account with name “admin” has no password set" = "Account with name “admin” has no password set";
+"Account with name “admin” has no password set" = "Account mit dem Namen “admin” hat kein Passwort";
 
 /* Uninstall dialog description */
-"All your settings, accounts and other server data will be lost." = "All your settings, accounts and other server data will be lost.";
+"All your settings, accounts and other server data will be lost." = "Alle Deine Einstellungen, Accounts und andere Serverdaten werden gelöscht.";
 
 /* Uninstall dialog title */
-"Are you sure you want to uninstall Wired Server?" = "Are you sure you want to uninstall Wired Server?";
+"Are you sure you want to uninstall Wired Server?" = "Möchtest Du den Wired Server wirklich deinstallieren?";
 
 /* Uninstall dialog button title */
-"Cancel" = "Cancel";
+"Cancel" = "Abbrechen";
 
 /* Port status */
-"Checking port status…" = "Checking port status…";
+"Checking port status…" = "Prüfe port status…";
 
 /* Install button title */
-"Install" = "Installieren";
+"Install" = "Installiere";
 
 /* WPPreferencePaneInstallFailed title */
-"Install Failed" = "Install Failed";
+"Install Failed" = "Installation fehlgeschlagen";
 
 /* Account status */
-"No account with name “admin” found" = "No account with name “admin” found";
+"No account with name “admin” found" = "Kein Account mit dem Namen “admin” gefunden";
 
 /* Port status */
-"Port %u is closed" = "Port %u is closed";
+"Port %u is closed" = "Port %u ist geschlossen";
 
 /* Port status */
-"Port %u is filtered" = "Port %u is filtered";
+"Port %u is filtered" = "Port %u ist gefiltert";
 
 /* Port status */
-"Port %u is open" = "Port %u is open";
+"Port %u is open" = "Port %u ist offen";
 
 /* Port status */
-"Port check failed" = "Port check failed";
+"Port check failed" = "Port Überprüfung fehlgeschlagen";
 
 /* Files dialog button title */
-"Select" = "Select";
+"Select" = "Auswählen";
 
 /* Files dialog title */
-"Select Files" = "Select Files";
+"Select Files" = "Dateien auswählen";
 
 /* Start button */
 "Start" = "Start";
 
 /* WPPreferencePaneStartFailed title */
-"Start Failed" = "Start Failed";
+"Start Failed" = "Start fehlgeschlagen";
 
 /* Stop button */
 "Stop" = "Stop";
 
 /* WPPreferencePaneStopFailed title */
-"Stop Failed" = "Stop Failed";
+"Stop Failed" = "Stop fehlgeschlagen";
 
 /* Uninstall dialog button title */
-"Uninstall" = "Uninstall";
+"Uninstall" = "Deinstallieren";
 
 /* WPPreferencePaneUninstallFailed title */
-"Uninstall Failed" = "Uninstall Failed";
+"Uninstall Failed" = "Deinstallation fehlgeschlagen";
 
 /* Uninstall button title */
-"Uninstall…" = "Uninstall…";
+"Uninstall…" = "Deinstallieren…";
 
 /* Installed version notice */
-"Wired is not installed" = "Wired is not installed";
+"Wired is not installed" = "Wired ist nicht installiert";
 
 /* WPPreferencePaneInstallFailed description (output) */
-"Wired Server could not be installed:\n\n%@." = "Wired Server could not be installed:\n\n%@.";
+"Wired Server could not be installed:\n\n%@." = "Wired Server konnte nicht installiert werden:\n\n%@.";
 
 /* WPPreferencePaneStartFailed description (output) */
-"Wired Server could not be started:\n\n%@." = "Wired Server could not be started:\n\n%@.";
+"Wired Server could not be started:\n\n%@." = "Wired Server konnte nicht gestartet werden:\n\n%@.";
 
 /* WPPreferencePaneStopFailed description (output) */
-"Wired Server could not be stopped:\n\n%@." = "Wired Server could not be stopped:\n\n%@.";
+"Wired Server could not be stopped:\n\n%@." = "Wired Server konnte nicht gestoppt werden:\n\n%@.";
 
 /* WPPreferencePaneUninstallFailed description (output) */
-"Wired Server could not be uninstalled:\n\n%@." = "Wired Server could not be uninstalled:\n\n%@.";
+"Wired Server could not be uninstalled:\n\n%@." = "Wired Server konnte nicht deinstalliert werden:\n\n%@.";
 
 /* Server status
  Port status */
-"Wired Server is not running" = "Wired Server is not running";
+"Wired Server is not running" = "Wired Server läuft nicht";
 
 /* Server status */
-"Wired Server is running since %@" = "Wired Server is running since %@";
+"Wired Server is running since %@" = "Wired Server läuft seit %@";
 
 /* Server status
  Port status */
-"Wired Server not found" = "Wired Server not found";
+"Wired Server not found" = "Wired Server nicht gefunden";
 

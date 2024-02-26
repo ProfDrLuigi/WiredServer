@@ -17,7 +17,6 @@
                 <outlet property="_networkPreferenceView" destination="813" id="1795"/>
                 <outlet property="_portCheckProgressIndicator" destination="5Z6-Mf-KM8" id="ilm-He-Iye"/>
                 <outlet property="_toolbar" destination="994" id="1793"/>
-                <outlet property="_updatePreferenceView" destination="814" id="1798"/>
                 <outlet property="accountStatusImageView" destination="1848" id="1867"/>
                 <outlet property="accountStatusTextField" destination="1849" id="1866"/>
                 <outlet property="checkPortAgainButton" destination="1779" id="1818"/>
@@ -58,7 +57,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
             <view key="contentView" id="992">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -128,7 +127,7 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="376" width="449" height="134"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
             <view key="contentView" id="1871">
                 <rect key="frame" x="0.0" y="0.0" width="449" height="134"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -307,7 +306,7 @@ Gw
                     </connections>
                 </button>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1975">
-                    <rect key="frame" x="28" y="45" width="183" height="17"/>
+                    <rect key="frame" x="5" y="45" width="206" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Launch Wired Automatically:" id="1976">
                         <font key="font" metaFont="system"/>
@@ -316,7 +315,7 @@ Gw
                     </textFieldCell>
                 </textField>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1977">
-                    <rect key="frame" x="80" y="20" width="131" height="17"/>
+                    <rect key="frame" x="25" y="20" width="186" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Enable Status Menu:" id="1978">
                         <font key="font" metaFont="system"/>
@@ -325,14 +324,14 @@ Gw
                     </textFieldCell>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="-66" y="-48"/>
+            <point key="canvasLocation" x="-154.5" y="-366.5"/>
         </customView>
         <customView id="813" userLabel="Servers">
             <rect key="frame" x="0.0" y="0.0" width="501" height="111"/>
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1774">
-                    <rect key="frame" x="110" y="45" width="95" height="17"/>
+                    <rect key="frame" x="47" y="45" width="158" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Listening Port:" id="1787">
                         <font key="font" metaFont="system"/>
@@ -370,15 +369,6 @@ Gw
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="GreenDrop" id="1784"/>
                 </imageView>
-                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1778">
-                    <rect key="frame" x="128" y="20" width="246" height="14"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" title="Server must be restarted after changing port." id="1783">
-                        <font key="font" metaFont="label" size="11"/>
-                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1779">
                     <rect key="frame" x="268" y="43" width="136" height="19"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -403,6 +393,15 @@ Gw
                     <rect key="frame" x="465" y="72" width="16" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                 </progressIndicator>
+                <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1778">
+                    <rect key="frame" x="59" y="18" width="382" height="14"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" controlSize="small" sendsActionOnEndEditing="YES" alignment="center" title="Server must be restarted after changing port." id="1783">
+                        <font key="font" metaFont="label" size="11"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
             </subviews>
             <point key="canvasLocation" x="-365.5" y="-960.5"/>
         </customView>
@@ -450,7 +449,7 @@ Gw
                     </connections>
                 </button>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1960">
-                    <rect key="frame" x="38" y="23" width="129" height="17"/>
+                    <rect key="frame" x="5" y="23" width="162" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Reindex Files every:" id="1961">
                         <font key="font" metaFont="system"/>
@@ -483,7 +482,7 @@ Gw
                     </textFieldCell>
                 </textField>
             </subviews>
-            <point key="canvasLocation" x="152" y="230"/>
+            <point key="canvasLocation" x="60" y="440"/>
         </customView>
         <customView id="1723">
             <rect key="frame" x="0.0" y="0.0" width="569" height="187"/>
@@ -513,7 +512,7 @@ Gw
                     </textFieldCell>
                 </textField>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1850">
-                    <rect key="frame" x="267" y="125" width="178" height="17"/>
+                    <rect key="frame" x="267" y="125" width="204" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="roundRect" title="Create New “admin” User…" bezelStyle="roundedRect" alignment="center" controlSize="small" borderStyle="border" inset="2" id="1853">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -535,7 +534,7 @@ Gw
                     </connections>
                 </button>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1923">
-                    <rect key="frame" x="76" y="88" width="173" height="16"/>
+                    <rect key="frame" x="18" y="88" width="231" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Automatically Prune Events:" id="1924">
                         <font key="font" metaFont="system"/>
@@ -565,7 +564,7 @@ Gw
                     </connections>
                 </popUpButton>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1936">
-                    <rect key="frame" x="75" y="49" width="186" height="16"/>
+                    <rect key="frame" x="10" y="49" width="251" height="16"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Activate Database Snapshots:" id="1937">
                         <font key="font" metaFont="system"/>
@@ -584,15 +583,6 @@ Gw
                         <action selector="snapshotEnable:" target="-2" id="1949"/>
                     </connections>
                 </button>
-                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1940">
-                    <rect key="frame" x="75" y="23" width="149" height="16"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Make a Snapshot every:" id="1941">
-                        <font key="font" metaFont="system"/>
-                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                    </textFieldCell>
-                </textField>
                 <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1942">
                     <rect key="frame" x="267" y="20" width="64" height="22"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -612,6 +602,15 @@ Gw
                     <rect key="frame" x="337" y="23" width="30" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="sec." id="1946">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1940">
+                    <rect key="frame" x="59" y="23" width="202" height="16"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Make a Snapshot every:" id="1941">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -651,7 +650,7 @@ Gw
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <clipView key="contentView" id="jH5-NB-SCe">
                         <rect key="frame" x="0.0" y="0.0" width="681" height="252"/>
-                        <autoresizingMask key="autoresizingMask"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" alternatingRowBackgroundColors="YES" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" typeSelect="NO" rowHeight="13" id="1743">
                                 <rect key="frame" x="0.0" y="0.0" width="681" height="252"/>
@@ -696,54 +695,13 @@ Gw
             </subviews>
             <point key="canvasLocation" x="-274" y="-649"/>
         </customView>
-        <customView id="814" userLabel="Updates">
-            <rect key="frame" x="0.0" y="0.0" width="398" height="116"/>
-            <autoresizingMask key="autoresizingMask"/>
-            <subviews>
-                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1563">
-                    <rect key="frame" x="68" y="80" width="206" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="check" title="Check for Updates At Launch" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="1564">
-                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="automaticallyCheckForUpdate:" target="-2" id="1833"/>
-                        <binding destination="1097" name="value" keyPath="values.SUEnableAutomaticChecks" id="1829"/>
-                    </connections>
-                </button>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1565">
-                    <rect key="frame" x="133" y="18" width="133" height="25"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="roundTextured" title="Check For Updates" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="1566">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <action selector="checkForUpdate:" target="-2" id="1824"/>
-                    </connections>
-                </button>
-                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1830">
-                    <rect key="frame" x="68" y="60" width="262" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="check" title="Automatically Download New Updates" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="1831">
-                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                    <connections>
-                        <binding destination="1097" name="value" keyPath="values.SUAllowsAutomaticUpdates" id="1832"/>
-                    </connections>
-                </button>
-            </subviews>
-            <point key="canvasLocation" x="-275" y="-366"/>
-        </customView>
         <customObject id="373" customClass="NSFontManager"/>
         <userDefaultsController representsSharedInstance="YES" id="1097"/>
         <window title="Activity Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" visibleAtLaunch="NO" animationBehavior="default" id="1983">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="131" y="159" width="285" height="74"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2056" height="1260"/>
             <view key="contentView" id="1984">
                 <rect key="frame" x="0.0" y="0.0" width="285" height="74"/>
                 <autoresizingMask key="autoresizingMask"/>

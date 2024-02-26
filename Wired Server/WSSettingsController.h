@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <Sparkle/SUUpdater.h>
 #import "WPPortChecker.h"
 
 
