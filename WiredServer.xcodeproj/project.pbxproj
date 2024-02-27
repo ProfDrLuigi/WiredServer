@@ -53,15 +53,15 @@
 		4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
 		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
-		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
 		4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C789019170B3E3C004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		4C78901E170B3E47004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4C78901F170B3E47004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C8D3358151E2D8D001A6BF7 /* Cocoa.framework */; };
 		4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D3361151E2D8D001A6BF7 /* InfoPlist.strings */; };
 		4C8D3365151E2D8D001A6BF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3364151E2D8D001A6BF7 /* main.m */; };
@@ -978,7 +978,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = OPALE;
 				TargetAttributes = {
 					4C233C881521022800245506 = {
@@ -1298,7 +1298,7 @@
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1332,7 +1332,7 @@
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1429,7 +1429,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1519,7 +1519,7 @@
 					"$(inherited)",
 					/usr/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 2.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server";
@@ -1566,7 +1566,7 @@
 					"$(inherited)",
 					/usr/lib,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -102,7 +102,7 @@
 		4C41727F147DC45500DC0A9A /* WISocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667F6D147B02E400AAA5C7 /* WISocket.m */; };
 		4C417280147DC45500DC0A9A /* WIThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C667F6E147B02E400AAA5C7 /* WIThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C417281147DC45500DC0A9A /* WIThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C667F6F147B02E400AAA5C7 /* WIThread.m */; };
-		4C417288147DC4DB00DC0A9A /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C417209147DC2B300DC0A9A /* WiredFoundation.framework */; };
+		4C417288147DC4DB00DC0A9A /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C417209147DC2B300DC0A9A /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		4C417309147EDF1000DC0A9A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C417307147EDF1000DC0A9A /* InfoPlist.strings */; };
 		4C41738D147EE00800DC0A9A /* NSAlert-WIAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C417315147EE00800DC0A9A /* NSAlert-WIAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4C41738E147EE00800DC0A9A /* NSAlert-WIAppKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C417316147EE00800DC0A9A /* NSAlert-WIAppKit.m */; };
@@ -2046,7 +2046,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				ORGANIZATIONNAME = "Read-Write";
 			};
 			buildConfigurationList = 4CBDABF6147AF52E00D0C51A /* Build configuration list for PBXProject "WiredFrameworks" */;
@@ -2496,12 +2496,6 @@
 				INFOPLIST_FILE = "WiredFoundation/WiredFoundation-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
-					/usr/lib,
-					"$(PROJECT_DIR)",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -2539,12 +2533,6 @@
 				INFOPLIST_FILE = "WiredFoundation/WiredFoundation-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
-					/usr/lib,
-					"$(PROJECT_DIR)",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -2649,10 +2637,6 @@
 				INFOPLIST_FILE = "WiredAppKit/WiredAppKit-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-all_load",
@@ -2691,10 +2675,6 @@
 				INFOPLIST_FILE = "WiredAppKit/WiredAppKit-Info.plist";
 				INSTALL_PATH = "@rpath";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/Pods/OpenSSL-Universal/lib-macos\"",
-				);
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				OTHER_LDFLAGS = (
 					"-all_load",
