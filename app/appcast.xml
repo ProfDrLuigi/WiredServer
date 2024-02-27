@@ -11,5 +11,14 @@
             <sparkle:releaseNotesLink>https://wired.istation.pw/wiredserver/wiredserver.html</sparkle:releaseNotesLink>
             <enclosure url="https://wired.istation.pw/wiredserver/wiredserver.zip" length="10187822" type="application/octet-stream" sparkle:edSignature="N/hwDGUk7wif1jG9mtyr9oqzwVXAAflDQ/3RkP7iMKb3NzxnFhWSBzG6+TALAKrewLHv0O5BkW3sDwgtN5EUAw=="/>
         </item>
+        <item>
+            <title>2.7</title>
+            <pubDate>Tue, 27 Feb 2024 10:59:28 +0100</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://wired.istation.pw/wiredserver/wiredserver.html</sparkle:releaseNotesLink>
+            <enclosure url="https://wired.istation.pw/wiredserver/wiredserver.zip" length="11011714" type="application/octet-stream" sparkle:edSignature="GkwVW8dJds2Ma61SMcq/JIMSZy58RoRC03JxLPRdL6ohpXXMH5jyCmxG82K3kSQOaplPOgIn6dozuQ0nZDPADw=="/>
+        </item>
     </channel>
 </rss>
