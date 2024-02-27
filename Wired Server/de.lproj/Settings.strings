@@ -168,10 +168,10 @@
 "1972.title" = "Port Status:";
 
 /* Class = "NSTextFieldCell"; title = "Launch Wired Automatically:"; ObjectID = "1976"; */
-"1976.title" = "Starte Wired automatisch:";
+"1976.title" = "Starte Wired automatisch";
 
 /* Class = "NSTextFieldCell"; title = "Enable Status Menu:"; ObjectID = "1978"; */
-"1978.title" = "Aktiviere Status Menu:";
+"1978.title" = "Aktiviere Status Menu";
 
 /* Class = "NSWindow"; title = "Activity Window"; ObjectID = "1983"; */
 "1983.title" = "Akitivitätsfenster";
