@@ -59,7 +59,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [self.statusItem setHighlightMode:YES];
+    [[self.statusItem button] cell].highlighted = NSCellHighlighted;
+
     [self.statusItem setMenu:self.statusMenu];
     
     [self _updateStatusMenu];
@@ -188,12 +189,12 @@
 
 - (void)_updateStatusMenu {
     if([_wiredManager isRunning]) {
-        [self.statusItem setImage:[NSImage imageNamed:@"WiredServerMenu"]];
-	} else {
-        [self.statusItem setImage:[NSImage imageNamed:@"WiredServerMenuOff"]];
-
+        self.statusItem.button.image = [NSImage imageNamed:@"WiredServerMenu"];
+    } else {
+        self.statusItem.button.image = [NSImage imageNamed:@"WiredServerMenuOff"];
     }
 }
+
 
 
 @end
