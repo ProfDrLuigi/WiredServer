@@ -229,6 +229,7 @@
 
 /* Begin PBXFileReference section */
 		2A614FEA2B8CC36600B4C575 /* Wired Server.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = "Wired Server.entitlements"; path = "../../../Downloads/WiredServer-master/Wired Server/Wired Server.entitlements"; sourceTree = "<group>"; };
+		2A9DD6F42B8DBEDA0077A59F /* check_port.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = check_port.php; sourceTree = "<group>"; };
 		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
 		2AE3B34A2B8C7921001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2AE3B34B2B8C7922001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
@@ -519,6 +520,7 @@
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
+				2A9DD6F42B8DBEDA0077A59F /* check_port.php */,
 				2A614FEA2B8CC36600B4C575 /* Wired Server.entitlements */,
 				2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */,
 				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
