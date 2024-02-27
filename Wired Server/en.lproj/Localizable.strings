@@ -29,13 +29,13 @@
 "No account with name “admin” found" = "No account with name “admin” found";
 
 /* Port status */
-"Port %u is closed" = "Port %u is closed";
+"Port %lu is closed" = "Port %lu is closed";
 
 /* Port status */
-"Port %u is filtered" = "Port %u is filtered";
+"Port %lu is filtered" = "Port %lu is filtered";
 
 /* Port status */
-"Port %u is open" = "Port %u is open";
+"Port %lu is open" = "Port %lu is open";
 
 /* Port status */
 "Port check failed" = "Port check failed";

@@ -34,6 +34,7 @@
 
 /* Begin PBXBuildFile section */
 		2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A01F9EF2B8918D000E1D111 /* Sparkle */; };
+		2A9DD6F62B8DDADB0077A59F /* Wired Server Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */; };
 		2AFF8CEF2B8C9A0600ABBAE8 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */; };
 		2AFF8CF12B8C9A5800ABBAE8 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */; };
@@ -190,6 +191,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2A9DD6F52B8DDAC70077A59F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				2A9DD6F62B8DDADB0077A59F /* Wired Server Helper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4C233CAC152111CF00245506 /* Copy Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -229,7 +240,6 @@
 
 /* Begin PBXFileReference section */
 		2A614FEA2B8CC36600B4C575 /* Wired Server.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = "Wired Server.entitlements"; path = "../../../Downloads/WiredServer-master/Wired Server/Wired Server.entitlements"; sourceTree = "<group>"; };
-		2A9DD6F42B8DBEDA0077A59F /* check_port.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = check_port.php; sourceTree = "<group>"; };
 		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
 		2AE3B34A2B8C7921001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2AE3B34B2B8C7922001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
@@ -520,7 +530,6 @@
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
-				2A9DD6F42B8DBEDA0077A59F /* check_port.php */,
 				2A614FEA2B8CC36600B4C575 /* Wired Server.entitlements */,
 				2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */,
 				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
@@ -943,6 +952,7 @@
 				4C52C884245A209900BFB5AE /* Copy Helper */,
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
+				2A9DD6F52B8DDAC70077A59F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -1419,7 +1429,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1482,7 +1492,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -1510,7 +1520,8 @@
 					/usr/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.7;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1528,7 +1539,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -1556,7 +1567,7 @@
 					/usr/lib,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MARKETING_VERSION = 2.1;
+				MARKETING_VERSION = 2.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.read-write.Wired-Server";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
