@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
-        <plugIn identifier="com.apple.WebKitIBPlugin" version="14460.31"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
+        <plugIn identifier="com.apple.WebKitIBPlugin" version="22505"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,40 +15,57 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="1">
             <rect key="frame" x="0.0" y="0.0" width="347" height="402"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView id="19">
-                    <rect key="frame" x="108" y="254" width="128" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <imageView translatesAutoresizingMaskIntoConstraints="NO" id="19">
+                    <rect key="frame" x="107" y="254" width="128" height="128"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" id="UwK-nr-oX2"/>
+                        <constraint firstAttribute="width" constant="128" id="x9U-ln-CIC"/>
+                    </constraints>
                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSApplicationIcon" id="20"/>
                 </imageView>
-                <webView id="77">
+                <webView translatesAutoresizingMaskIntoConstraints="NO" id="77">
                     <rect key="frame" x="20" y="45" width="307" height="201"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                    <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO" allowsAnimatedImages="NO" allowsAnimatedImageLooping="NO"/>
+                    <webPreferences key="preferences" defaultFontSize="12" defaultFixedFontSize="12" javaEnabled="NO" javaScriptCanOpenWindowsAutomatically="NO" allowsAnimatedImages="NO" allowsAnimatedImageLooping="NO">
+                        <nil key="identifier"/>
+                    </webPreferences>
                     <connections>
                         <outlet property="UIDelegate" destination="-2" id="79"/>
                         <outlet property="frameLoadDelegate" destination="-2" id="80"/>
                     </connections>
                 </webView>
-                <button verticalHuggingPriority="750" id="41">
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="41">
                     <rect key="frame" x="125" y="18" width="94" height="19"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <buttonCell key="cell" type="roundRect" title="More info…" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="42">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="smallSystem"/>
                     </buttonCell>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="94" id="LPl-cv-cPs"/>
+                    </constraints>
                     <connections>
                         <action selector="moreInfo:" target="-2" id="44"/>
                     </connections>
                 </button>
             </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="41" secondAttribute="bottom" constant="19" id="ISQ-aT-xde"/>
+                <constraint firstItem="41" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="125" id="Y8d-NE-JHZ"/>
+                <constraint firstItem="77" firstAttribute="top" secondItem="19" secondAttribute="bottom" constant="8" symbolic="YES" id="ZMq-Yc-YTm"/>
+                <constraint firstItem="41" firstAttribute="top" secondItem="77" secondAttribute="bottom" constant="8" symbolic="YES" id="agX-MW-ZbH"/>
+                <constraint firstItem="19" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="107" id="cv1-Ja-jck"/>
+                <constraint firstItem="19" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="kuU-vg-mTX"/>
+                <constraint firstAttribute="trailing" secondItem="77" secondAttribute="trailing" constant="20" symbolic="YES" id="nVw-O7-rk0"/>
+                <constraint firstItem="77" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="vak-pw-tdD"/>
+            </constraints>
+            <point key="canvasLocation" x="129" y="154"/>
         </customView>
     </objects>
     <resources>
-        <image name="NSApplicationIcon" width="128" height="128"/>
+        <image name="NSApplicationIcon" width="32" height="32"/>
     </resources>
 </document>
