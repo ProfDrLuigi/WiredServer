@@ -448,7 +448,6 @@
 		4CA5987F15A2449F000C4DAD /* users.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = users.h; path = ../../wired/wired/users.h; sourceTree = "<group>"; };
 		4CA5988015A2449F000C4DAD /* wired.conf.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = wired.conf.in; path = ../../wired/wired/wired.conf.in; sourceTree = "<group>"; };
 		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
-		4CE5D55124475A48000333FB /* dsa_pub.pem */ = {isa = PBXFileReference; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = SOURCE_ROOT; };
 		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
 		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
 		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
@@ -598,7 +597,6 @@
 				4C8D3367151E2D8D001A6BF7 /* Credits.rtf */,
 				4C233CFC15228BB800245506 /* wiredserverrnote.html */,
 				4C016F9A1778F6E200D6D2B3 /* Localizable.strings */,
-				4CE5D55124475A48000333FB /* dsa_pub.pem */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1429,7 +1427,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
