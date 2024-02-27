@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Wired Server</title>
+        <item>
+            <title>2.7</title>
+            <pubDate>Mon, 26 Feb 2024 14:29:57 +0100</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>2.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.14.6</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://wired.istation.pw/wiredserver/wiredserver.html</sparkle:releaseNotesLink>
+            <enclosure url="https://wired.istation.pw/wiredserver/wiredserver.zip" length="10187822" type="application/octet-stream" sparkle:edSignature="N/hwDGUk7wif1jG9mtyr9oqzwVXAAflDQ/3RkP7iMKb3NzxnFhWSBzG6+TALAKrewLHv0O5BkW3sDwgtN5EUAw=="/>
+        </item>
+    </channel>
+</rss>
