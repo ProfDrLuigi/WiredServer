@@ -239,7 +239,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2A614FEA2B8CC36600B4C575 /* Wired Server.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; name = "Wired Server.entitlements"; path = "../../../Downloads/WiredServer-master/Wired Server/Wired Server.entitlements"; sourceTree = "<group>"; };
 		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
 		2AE3B34A2B8C7921001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2AE3B34B2B8C7922001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
@@ -529,7 +528,6 @@
 		4C8D3349151E2D8C001A6BF7 = {
 			isa = PBXGroup;
 			children = (
-				2A614FEA2B8CC36600B4C575 /* Wired Server.entitlements */,
 				2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */,
 				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
 				B133499021B1BA55004AF77F /* libwired */,
@@ -951,6 +949,7 @@
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
 				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
 				2A9DD6F52B8DDAC70077A59F /* CopyFiles */,
+				2A9678A42B8F9A24008C7932 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1089,6 +1088,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A9678A42B8F9A24008C7932 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\n\ncp /Users/luigi/Documents/Xcode/WiredServer/wiredserver.html /Volumes/Homeshare/Xcode/WiredServer/upload/\nditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/WiredServer/upload/wiredserver.zip\n\nif [ -f /Users/luigi/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -r /Users/luigi/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -r \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/luigi/Desktop/.\n\n#rm -r /Users/luigi/Library/Caches/Sparkle_generate_appcast/*\n#/Applications/Sparkle/bin/generate_appcast /Volumes/Homeshare/Xcode/WiredServer/upload/\n";
+		};
 		4C8A853F21B05BB2001154BC /* Run Script Compile "wired" */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
