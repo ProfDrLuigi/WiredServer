@@ -1102,7 +1102,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\n#make clean\n\n#env CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\n#make\n\n#mkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\n#cp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n";
+			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n";
 		};
 		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1481,7 +1481,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -1528,7 +1528,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
