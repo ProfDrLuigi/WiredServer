@@ -1,6 +1,6 @@
 # Wired Server Source Code
 
-This repository hosts Wired Server source code. You will find an Xcode project named "WiredServer.xcworkspace" that contains a Wired Server target ready to deploy a 10.10+ compatible application (x64).
+This repository hosts Wired Server source code. You will find an Xcode project named "WiredServer.xcworkspace" that contains a Wired Server target ready to deploy a 10.13+ compatible application (x64/ARM).
 
 ## Prerequisites
 
