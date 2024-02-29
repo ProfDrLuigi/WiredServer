@@ -34,7 +34,12 @@
 
 /* Begin PBXBuildFile section */
 		2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 2A01F9EF2B8918D000E1D111 /* Sparkle */; };
-		2A9DD6F62B8DDADB0077A59F /* Wired Server Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2A79E70C2B908F5D00CAB998 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
+		2A79E70D2B908F5D00CAB998 /* WiredAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A79E70F2B908FB000CAB998 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
+		2A79E7102B908FB000CAB998 /* WiredFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2A79E7142B90903F00CAB998 /* Wired Server Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2A79E7152B9090A900CAB998 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */; };
 		2AFF8CEF2B8C9A0600ABBAE8 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */; };
 		2AFF8CF12B8C9A5800ABBAE8 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */; };
@@ -52,11 +57,6 @@
 		4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */ = {isa = PBXBuildFile; fileRef = 4C233CFC15228BB800245506 /* wiredserverrnote.html */; };
 		4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4C5EDCC7154366750031D44E /* man in Resources */ = {isa = PBXBuildFile; fileRef = 4C5EDCC6154366740031D44E /* man */; };
-		4C789007170B35DE004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
-		4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
-		4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C789019170B3E3C004CE617 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
 		4C78901A170B3E3C004CE617 /* WiredAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFE170B35BF004CE617 /* WiredAppKit.framework */; };
 		4C78901B170B3E3C004CE617 /* WiredFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; };
@@ -90,13 +90,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C233CBA15211F9C00245506 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4C233C881521022800245506;
-			remoteInfo = "Wired Server Helper";
-		};
 		4C61710A246AB43400D24A9D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -174,13 +167,6 @@
 			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
 			remoteInfo = "libwired-osx";
 		};
-		4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4C788FDF170B35BE004CE617 /* WiredFrameworks.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4CBDAD13147AF94F00D0C51A;
-			remoteInfo = "libwired-osx";
-		};
 		4CDD88AE15F76CA500283005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4C8D334B151E2D8C001A6BF7 /* Project object */;
@@ -191,13 +177,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		2A79E70E2B908F5D00CAB998 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2A79E70D2B908F5D00CAB998 /* WiredAppKit.framework in Embed Frameworks */,
+				2A79E7102B908FB000CAB998 /* WiredFoundation.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A9DD6F52B8DDAC70077A59F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				2A9DD6F62B8DDADB0077A59F /* Wired Server Helper.app in CopyFiles */,
+				2A79E7142B90903F00CAB998 /* Wired Server Helper.app in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,18 +220,6 @@
 				4C52C885245A20BE00BFB5AE /* Wired Server Helper.app in Copy Helper */,
 			);
 			name = "Copy Helper";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4C789010170B3998004CE617 /* WiredFoundation.framework in Copy Frameworks */,
-				4C789011170B3998004CE617 /* WiredAppKit.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -472,13 +458,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A01F9F02B8918D000E1D111 /* Sparkle in Frameworks */,
-				4C789013170B39CE004CE617 /* WiredFoundation.framework in Frameworks */,
-				4C789014170B39CE004CE617 /* WiredAppKit.framework in Frameworks */,
-				4C789007170B35DE004CE617 /* wired.a in Frameworks */,
+				2A79E7152B9090A900CAB998 /* wired.a in Frameworks */,
 				B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */,
 				B133499F21B1BE6B004AF77F /* libsqlite3.dylib in Frameworks */,
 				4C8D3359151E2D8D001A6BF7 /* Cocoa.framework in Frameworks */,
+				2A79E70C2B908F5D00CAB998 /* WiredAppKit.framework in Frameworks */,
 				B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */,
+				2A79E70F2B908FB000CAB998 /* WiredFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,18 +933,16 @@
 				4C8D3351151E2D8D001A6BF7 /* Frameworks */,
 				4C52C884245A209900BFB5AE /* Copy Helper */,
 				4C8D3352151E2D8D001A6BF7 /* Resources */,
-				4C8D33E8151E98AC001A6BF7 /* Copy Frameworks */,
 				2A9DD6F52B8DDAC70077A59F /* CopyFiles */,
-				2A9678A42B8F9A24008C7932 /* ShellScript */,
+				2A79E70E2B908F5D00CAB998 /* Embed Frameworks */,
+				2A9678A42B8F9A24008C7932 /* Prepare Publishing */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				4C61710B246AB43400D24A9D /* PBXTargetDependency */,
-				4C8865D821A1BE56002A7F8A /* PBXTargetDependency */,
 				4C789002170B35D6004CE617 /* PBXTargetDependency */,
 				4C789004170B35D6004CE617 /* PBXTargetDependency */,
-				4C233CBB15211F9C00245506 /* PBXTargetDependency */,
 			);
 			name = "Wired Server";
 			packageProductDependencies = (
@@ -1088,7 +1072,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2A9678A42B8F9A24008C7932 /* ShellScript */ = {
+		2A9678A42B8F9A24008C7932 /* Prepare Publishing */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1097,13 +1081,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Prepare Publishing";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#\n\ncp /Users/luigi/Documents/Xcode/WiredServer/wiredserver.html /Volumes/Homeshare/Xcode/WiredServer/upload/\nditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Volumes/Homeshare/Xcode/WiredServer/upload/wiredserver.zip\n\nif [ -f /Users/luigi/Desktop/\"${PRODUCT_NAME}.app\" ]; then\n  rm -r /Users/luigi/Desktop/\"${PRODUCT_NAME}.app\"\nfi\n\ncp -r \"${TARGET_BUILD_DIR}\"/\"${PRODUCT_NAME}.app\" /Users/luigi/Desktop/.\n\n#rm -r /Users/luigi/Library/Caches/Sparkle_generate_appcast/*\n#/Applications/Sparkle/bin/generate_appcast /Volumes/Homeshare/Xcode/WiredServer/upload/\n";
+			shellScript = "#!/bin/bash\n\nWIRED_USER=$(id -un)\n\nif [ -d \"/Volumes/Homeshare/Xcode/WiredServer/upload\" ]; then\n    cp \"/Users/$WIRED_USER/Documents/Xcode/WiredServer/wiredserver.html\" \"/Volumes/Homeshare/Xcode/WiredServer/upload/\"\n\n    if [ -f \"/Users/$WIRED_USER/Documents/Xcode/wired\" ]; then\n        cp  \"/Users/$WIRED_USER/Documents/Xcode/wired\" \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app\"/Contents/Resources/Wired\n    fi\n  \n    ditto -c -k --sequesterRsrc --keepParent \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app\" \"/Volumes/Homeshare/Xcode/WiredServer/upload/wiredserver.zip\"\n\nfi\n\nif [ -f \"/Users/$WIRED_USER/Desktop/${PRODUCT_NAME}.app\" ]; then\n    rm -r \"/Users/$WIRED_USER/Desktop/${PRODUCT_NAME}.app\"\nfi\n\ncp -r \"${TARGET_BUILD_DIR}/${PRODUCT_NAME}.app\" \"/Users/$WIRED_USER/Desktop/.\"\n";
 		};
 		4C8A853F21B05BB2001154BC /* Run Script Compile "wired" */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1117,7 +1102,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\nmake clean\n\nenv CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\nmake\n\nmkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\ncp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n";
+			shellScript = "# wired user & group\nWIRED_USER=$(id -un)\nWIRED_GROUP=$(id -gn)\n\ncd wired\n#make clean\n\n#env CPPFLAGS=\"-I${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/include\" LDFLAGS=\"-L${BUILD_DIR%Build/*}SourcePackages/checkouts/OpenSSL/macosx/lib\" \\\n./configure --build=aarch64 --host=aarch64 --enable-all --with-fake-prefix=\"/Library\" --with-wireddir=\"Wired\" --with-user=\"$WIRED_USER\" --with-group=\"$WIRED_GROUP\"\n\n#make\n\n#mkdir -p \"$BUILT_PRODUCTS_DIR/Wired\"\n#cp -r run/ \"$BUILT_PRODUCTS_DIR/Wired\"\n";
 		};
 		4CCEEFB8154C994D004AE045 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1170,11 +1155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4C233CBB15211F9C00245506 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4C233C881521022800245506 /* Wired Server Helper */;
-			targetProxy = 4C233CBA15211F9C00245506 /* PBXContainerItemProxy */;
-		};
 		4C61710B246AB43400D24A9D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4C8A853E21B05BB2001154BC /* wired */;
@@ -1204,11 +1184,6 @@
 			isa = PBXTargetDependency;
 			name = "libwired-osx";
 			targetProxy = 4C78901C170B3E3F004CE617 /* PBXContainerItemProxy */;
-		};
-		4C8865D821A1BE56002A7F8A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "libwired-osx";
-			targetProxy = 4C8865D721A1BE56002A7F8A /* PBXContainerItemProxy */;
 		};
 		4CDD88AF15F76CA500283005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1297,7 +1272,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
@@ -1331,7 +1306,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 7KTXA5Y36K;
@@ -1506,7 +1481,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;
@@ -1553,7 +1528,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 6;
+				CURRENT_PROJECT_VERSION = 5;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = NO;

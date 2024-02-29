@@ -24,9 +24,9 @@ HEADERS			= $(addprefix $(headerdir)/,$(notdir $(shell find $(abs_top_srcdir)/li
 DEFS			= -DHAVE_CONFIG_H
 CC				= gcc
 CFLAGS			= -g -O2
-CPPFLAGS		= -I/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-diuxyepkbhfpstdsraxdsmljpked/SourcePackages/checkouts/OpenSSL/macosx/include -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_PTHREADS -DWI_LIBXML2 -DWI_PLIST -DWI_SQLITE3 -DWI_RSA -DWI_ZLIB -DWI_P7 -DWI_TEST_ROOT=\"$(abs_top_srcdir)/test\"
-LDFLAGS			= -L$(rundir)/lib -L/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-diuxyepkbhfpstdsraxdsmljpked/SourcePackages/checkouts/OpenSSL/macosx/lib
-LIBS			= -lwired -framework CoreServices -framework Carbon -lxml2 -lsqlite3 -lcrypto -lz
+CPPFLAGS		= -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_PTHREADS -DWI_LIBXML2 -DWI_PLIST -DWI_SQLITE3 -DWI_ZLIB -DWI_P7 -DWI_TEST_ROOT=\"$(abs_top_srcdir)/test\"
+LDFLAGS			= -L$(rundir)/lib 
+LIBS			= -lwired -framework CoreServices -framework Carbon -lxml2 -lsqlite3 -lz
 INCLUDES		= -I$(abs_top_srcdir) -I$(rundir)/include -I$(abs_top_srcdir)/test
 
 COMPILE			= $(CC) $(DEFS) $(INCLUDES) $(CPPFLAGS) $(CFLAGS)
