@@ -9,15 +9,17 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 
 ## How to compile Wired Server
 
-1. Clone Github Repo in Xcode:
+1. Clone Github Repo :
 
-		https://github.com/profdrluigi/WiredServer.git
+		git clone https://github.com/profdrluigi/WiredServer.git
+		cd WiredServer
+		git clone https://github.com/ProfDrLuigi/libwired wired/libwired
 		
-2. Open `WiredServer.xcworkspace`
+3. Open `WiredServer.xcworkspace`
 
-3. Select scheme `Wired Server` and be sure to use "Release" Build Configuration
+4. Select scheme `Wired Server` and be sure to use "Release" Build Configuration
 
-4. Launch Build, Wired Server.app should launch automatically when finished
+5. Launch Build, Wired Server.app should launch automatically when finished
 
 ## How to create U2B for the "wired" Binary
 
