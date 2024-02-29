@@ -15,7 +15,7 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 		
 2. Open `WiredServer.xcworkspace`
 
-3. Select scheme `Wired Server` and be sure to use "Debug" Build Configuration
+3. Select scheme `Wired Server` and be sure to use "Release" Build Configuration
 
 4. Launch Build, Wired Server.app should launch automatically when finished
 
