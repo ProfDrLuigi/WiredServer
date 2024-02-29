@@ -83,7 +83,6 @@
 		4C8D348B151F58D7001A6BF7 /* WPWiredManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D3482151F58D7001A6BF7 /* WPWiredManager.m */; };
 		4C8D34B7151F81C3001A6BF7 /* WSSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D34B6151F81C3001A6BF7 /* WSSettingsController.m */; };
 		4CB57B171779007D006ECB87 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CB57B151779007D006ECB87 /* Settings.xib */; };
-		B133499321B1BA55004AF77F /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = B133499021B1BA55004AF77F /* libwired */; };
 		B133499B21B1BD8D004AF77F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499821B1BD8D004AF77F /* WebKit.framework */; };
 		B133499D21B1BD9F004AF77F /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499C21B1BD9E004AF77F /* Quartz.framework */; };
 		B133499F21B1BE6B004AF77F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B133499E21B1BE6B004AF77F /* libsqlite3.dylib */; };
@@ -435,7 +434,6 @@
 		4CA5988115A2449F000C4DAD /* wiredctl.in */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = wiredctl.in; path = ../../wired/wired/wiredctl.in; sourceTree = "<group>"; };
 		4CE5D55F244762BC000333FB /* Wired Server.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server.entitlements"; sourceTree = "<group>"; };
 		4CE5D560244762E9000333FB /* Wired Server Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Wired Server Helper.entitlements"; sourceTree = "<group>"; };
-		B133499021B1BA55004AF77F /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
 		B133499821B1BD8D004AF77F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
 		B133499C21B1BD9E004AF77F /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Quartz.framework; sourceTree = DEVELOPER_DIR; };
 		B133499E21B1BE6B004AF77F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
@@ -516,7 +514,6 @@
 			children = (
 				2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */,
 				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
-				B133499021B1BA55004AF77F /* libwired */,
 				4C8D335E151E2D8D001A6BF7 /* Wired Server */,
 				4C233C8C1521022800245506 /* Wired Server Helper */,
 				4CA5985F15A24460000C4DAD /* wired */,
@@ -1063,7 +1060,6 @@
 				2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */,
 				4C233CFD15228BB800245506 /* wiredserverrnote.html in Resources */,
 				4C5EDCC7154366750031D44E /* man in Resources */,
-				B133499321B1BA55004AF77F /* libwired in Resources */,
 				4C016F981778F6E200D6D2B3 /* Localizable.strings in Resources */,
 				4CB57B171779007D006ECB87 /* Settings.xib in Resources */,
 			);
