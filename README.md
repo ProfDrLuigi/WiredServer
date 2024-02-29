@@ -19,6 +19,51 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 
 4. Launch Build, Wired Server.app should launch automatically when finished
 
+## How to create U2B for the "wired" Binary
+
+To creating a Universal Binary (the 'wired' Server Binary itself, not the Wired Server Application) you need to compile the XCode Project on a M- and Intel Mac/Hackintosh.
+
+On a M Mac:
+
+- Build 
+- Go into
+
+		"Wired Server.app/Contents/Resources/Wired" 
+
+and copy the file
+		
+		"wired"
+to Desktop and rename it to
+
+		"wired_arm"
+	
+On an Intel Mac:
+
+- Build 
+- Go into
+
+		"Wired Server.app/Contents/Resources/Wired" 
+
+and copy the file
+		
+		"wired"
+to Desktop and rename it to
+
+		"wired_x86"
+
+### Making U2B of the 2 Binaries
+
+Now open the Terminal and type
+
+		lipo -create ~/Desktop/wired_arm ~/Desktop/wired_x86 -output ~/Desktop/wired
+
+Now copy the new created "wired" Binary too:
+
+		"Wired Server.app/Contents/Resources/Wired" 
+
+and overwrite the old one.
+
+Done. Now you have a fully U2B Server.
 
 ## Troubleshooting
 
