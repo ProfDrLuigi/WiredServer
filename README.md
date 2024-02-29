@@ -12,8 +12,7 @@ This repository hosts Wired Server source code. You will find an Xcode project n
 1. Clone Github Repo :
 
 		git clone https://github.com/profdrluigi/WiredServer.git
-		cd WiredServer
-		git clone https://github.com/ProfDrLuigi/libwired wired/libwired
+
 		
 3. Open `WiredServer.xcworkspace`
 
