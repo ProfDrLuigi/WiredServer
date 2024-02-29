@@ -1,0 +1,4 @@
+[submodule "libwired"]
+	path = libwired
+	url = https://github.com/profdrluigi/libwired
+	branch = master
