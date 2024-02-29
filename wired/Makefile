@@ -1,6 +1,6 @@
 # Makefile.in
 
-abs_top_srcdir		= /Users/luigi/Documents/Xcode/WiredServer/wired
+abs_top_srcdir		= /Users/luigi/Documents/Xcode/WiredS/wired
 datarootdir			= ${prefix}/share
 exec_prefix			= ${prefix}
 fake_prefix			= /Library
@@ -29,8 +29,8 @@ TRANSFERTESTOBJS	= $(addprefix $(objdir)/transfertest/,$(notdir $(patsubst %.c,%
 DEFS				= -DHAVE_CONFIG_H -DENABLE_STRNATPMPERR -DMINIUPNPC_SET_SOCKET_TIMEOUT
 CC					= gcc
 CFLAGS				= -g -O2
-CPPFLAGS			= -I/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-diuxyepkbhfpstdsraxdsmljpked/SourcePackages/checkouts/OpenSSL/macosx/include -DWI_PTHREADS -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_SQLITE3 -DWI_RSA -DWI_LIBXML2 -DWI_PLIST -DWI_ZLIB -DWI_P7
-LDFLAGS				= -L$(rundir)/libwired/lib -L/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-diuxyepkbhfpstdsraxdsmljpked/SourcePackages/checkouts/OpenSSL/macosx/lib
+CPPFLAGS			= -I/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-aabbttapjablyratoiglizqsfpmh/SourcePackages/checkouts/OpenSSL/macosx/include -DWI_PTHREADS -DWI_CORESERVICES -DWI_CARBON -DWI_DIGESTS -DWI_CIPHERS -DWI_SQLITE3 -DWI_RSA -DWI_LIBXML2 -DWI_PLIST -DWI_ZLIB -DWI_P7
+LDFLAGS				= -L$(rundir)/libwired/lib -L/Users/luigi/Library/Developer/Xcode/DerivedData/WiredServer-aabbttapjablyratoiglizqsfpmh/SourcePackages/checkouts/OpenSSL/macosx/lib
 LIBS				= -lwired -framework CoreServices -framework Carbon -lsqlite3 -lcrypto -lxml2 -lz
 INCLUDES			= -I$(abs_top_srcdir) -I$(rundir)/libwired/include -I$(abs_top_srcdir)/thirdparty
 

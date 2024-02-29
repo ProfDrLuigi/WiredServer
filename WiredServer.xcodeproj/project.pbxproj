@@ -40,6 +40,7 @@
 		2A79E7102B908FB000CAB998 /* WiredFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FFA170B35BF004CE617 /* WiredFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2A79E7142B90903F00CAB998 /* Wired Server Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4C233C891521022800245506 /* Wired Server Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2A79E7152B9090A900CAB998 /* wired.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C788FF2170B35BF004CE617 /* wired.a */; };
+		2A985C502B913B4E00BA10F4 /* libwired in Resources */ = {isa = PBXBuildFile; fileRef = 2A985C4F2B913B4E00BA10F4 /* libwired */; };
 		2AE3B3592B8C8EA0001F95D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */; };
 		2AFF8CEF2B8C9A0600ABBAE8 /* WiredServerMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CEE2B8C9A0600ABBAE8 /* WiredServerMenu.png */; };
 		2AFF8CF12B8C9A5800ABBAE8 /* WiredServerMenuOff.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFF8CF02B8C9A5800ABBAE8 /* WiredServerMenuOff.png */; };
@@ -224,6 +225,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2A985C4F2B913B4E00BA10F4 /* libwired */ = {isa = PBXFileReference; lastKnownFileType = folder; name = libwired; path = wired/libwired; sourceTree = "<group>"; };
 		2AE3B1F12B8B923F001F95D7 /* wiredserver.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = wiredserver.html; sourceTree = "<group>"; };
 		2AE3B34A2B8C7921001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2AE3B34B2B8C7922001F95D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Settings.xib; sourceTree = "<group>"; };
@@ -514,6 +516,7 @@
 			children = (
 				2AE3B3582B8C8EA0001F95D7 /* Assets.xcassets */,
 				2AE3B1F12B8B923F001F95D7 /* wiredserver.html */,
+				2A985C4F2B913B4E00BA10F4 /* libwired */,
 				4C8D335E151E2D8D001A6BF7 /* Wired Server */,
 				4C233C8C1521022800245506 /* Wired Server Helper */,
 				4CA5985F15A24460000C4DAD /* wired */,
@@ -1050,6 +1053,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A985C502B913B4E00BA10F4 /* libwired in Resources */,
 				4C8D3363151E2D8D001A6BF7 /* InfoPlist.strings in Resources */,
 				4C8D3369151E2D8D001A6BF7 /* Credits.rtf in Resources */,
 				4C8D336F151E2D8D001A6BF7 /* MainMenu.xib in Resources */,
