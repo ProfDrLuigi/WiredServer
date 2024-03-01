@@ -58,7 +58,7 @@ Now open the Terminal and type
 
 		lipo -create ~/Desktop/wired_arm ~/Desktop/wired_x86 -output ~/Desktop/wired
 
-Now copy the new created "wired" Binary too:
+Now copy the new created "wired" Binary to:
 
 		"Wired Server.app/Contents/Resources/Wired" 
 
