@@ -70,6 +70,13 @@ Done. Now you have a fully U2B Server.
 
 Be sure that "wired" target is listed in Taget Dependencies Build Phases of Wired Server target. If not, add it in order to compile wired binary for Mac.
 
+If you got the error that the Application can not be opened because it's damaged you must put it out of the Quarantain. Type in Terminal:
+
+  		xattr -rc "/Applications/Wired Server.app"
+
+ (or another Path where you have the App) and you should be good to go.
+
+
 ## License
 
 This code is distributed under BSD license, and it is free for personal or commercial use.
