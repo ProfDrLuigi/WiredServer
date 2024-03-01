@@ -34,6 +34,7 @@ On a M Mac:
 and copy the file
 		
 		"wired"
+  
 to Desktop and rename it to
 
 		"wired_arm"
@@ -48,6 +49,7 @@ On an Intel Mac:
 and copy the file
 		
 		"wired"
+  
 to Desktop and rename it to
 
 		"wired_x86"
